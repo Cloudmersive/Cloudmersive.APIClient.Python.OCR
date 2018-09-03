@@ -16,3 +16,5 @@ from __future__ import absolute_import
 
 # import models into model package
 from cloudmersive_ocr_api_client.models.image_to_text_response import ImageToTextResponse
+from cloudmersive_ocr_api_client.models.ocr_page_result import OcrPageResult
+from cloudmersive_ocr_api_client.models.pdf_to_text_response import PdfToTextResponse

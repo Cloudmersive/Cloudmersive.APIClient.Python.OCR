@@ -17,9 +17,13 @@ from __future__ import absolute_import
 
 # import apis into sdk package
 from cloudmersive_ocr_api_client.api.image_ocr_api import ImageOcrApi
+from cloudmersive_ocr_api_client.api.pdf_ocr_api import PdfOcrApi
+from cloudmersive_ocr_api_client.api.preprocessing_api import PreprocessingApi
 
 # import ApiClient
 from cloudmersive_ocr_api_client.api_client import ApiClient
 from cloudmersive_ocr_api_client.configuration import Configuration
 # import models into sdk package
 from cloudmersive_ocr_api_client.models.image_to_text_response import ImageToTextResponse
+from cloudmersive_ocr_api_client.models.ocr_page_result import OcrPageResult
+from cloudmersive_ocr_api_client.models.pdf_to_text_response import PdfToTextResponse
