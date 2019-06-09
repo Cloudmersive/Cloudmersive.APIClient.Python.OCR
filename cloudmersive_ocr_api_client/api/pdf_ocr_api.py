@@ -248,7 +248,7 @@ class PdfOcrApi(object):
             collection_formats=collection_formats)
 
     def pdf_ocr_post(self, image_file, **kwargs):  # noqa: E501
-        """Converts an uploaded PDF file in common formats such as JPEG, PNG into text via Optical Character Recognition.  # noqa: E501
+        """Converts an uploaded PDF file into text via Optical Character Recognition.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
@@ -271,7 +271,7 @@ class PdfOcrApi(object):
             return data
 
     def pdf_ocr_post_with_http_info(self, image_file, **kwargs):  # noqa: E501
-        """Converts an uploaded PDF file in common formats such as JPEG, PNG into text via Optical Character Recognition.  # noqa: E501
+        """Converts an uploaded PDF file into text via Optical Character Recognition.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True

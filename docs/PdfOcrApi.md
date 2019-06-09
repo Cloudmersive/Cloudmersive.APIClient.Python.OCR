@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**pdf_ocr_pdf_to_lines_with_location**](PdfOcrApi.md#pdf_ocr_pdf_to_lines_with_location) | **POST** /ocr/pdf/to/lines-with-location | Convert a PDF into text lines with location
 [**pdf_ocr_pdf_to_words_with_location**](PdfOcrApi.md#pdf_ocr_pdf_to_words_with_location) | **POST** /ocr/pdf/to/words-with-location | Convert a PDF into words with location
-[**pdf_ocr_post**](PdfOcrApi.md#pdf_ocr_post) | **POST** /ocr/pdf/toText | Converts an uploaded PDF file in common formats such as JPEG, PNG into text via Optical Character Recognition.
+[**pdf_ocr_post**](PdfOcrApi.md#pdf_ocr_post) | **POST** /ocr/pdf/toText | Converts an uploaded PDF file into text via Optical Character Recognition.
 
 
 # **pdf_ocr_pdf_to_lines_with_location**
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 # **pdf_ocr_post**
 > PdfToTextResponse pdf_ocr_post(image_file, language=language, preprocessing=preprocessing)
 
-Converts an uploaded PDF file in common formats such as JPEG, PNG into text via Optical Character Recognition.
+Converts an uploaded PDF file into text via Optical Character Recognition.
 
 ### Example
 ```python
@@ -151,7 +151,7 @@ language = 'language_example' # str | Optional, language of the input document, 
 preprocessing = 'preprocessing_example' # str | Optional, preprocessing mode, default is 'Auto'.  Possible values are None (no preprocessing of the image), and Auto (automatic image enhancement of the image before OCR is applied; this is recommended). (optional)
 
 try:
-    # Converts an uploaded PDF file in common formats such as JPEG, PNG into text via Optical Character Recognition.
+    # Converts an uploaded PDF file into text via Optical Character Recognition.
     api_response = api_instance.pdf_ocr_post(image_file, language=language, preprocessing=preprocessing)
     pprint(api_response)
 except ApiException as e:
