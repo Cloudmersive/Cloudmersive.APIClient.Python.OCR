@@ -119,6 +119,9 @@ class ImageToLinesWithLocationResult(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(ImageToLinesWithLocationResult, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

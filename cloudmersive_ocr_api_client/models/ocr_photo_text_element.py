@@ -231,6 +231,9 @@ class OcrPhotoTextElement(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(OcrPhotoTextElement, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

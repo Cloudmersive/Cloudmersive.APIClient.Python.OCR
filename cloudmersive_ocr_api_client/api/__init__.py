@@ -6,3 +6,4 @@ from __future__ import absolute_import
 from cloudmersive_ocr_api_client.api.image_ocr_api import ImageOcrApi
 from cloudmersive_ocr_api_client.api.pdf_ocr_api import PdfOcrApi
 from cloudmersive_ocr_api_client.api.preprocessing_api import PreprocessingApi
+from cloudmersive_ocr_api_client.api.receipts_api import ReceiptsApi

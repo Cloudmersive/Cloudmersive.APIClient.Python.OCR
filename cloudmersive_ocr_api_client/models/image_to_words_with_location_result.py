@@ -119,6 +119,9 @@ class ImageToWordsWithLocationResult(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(ImageToWordsWithLocationResult, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

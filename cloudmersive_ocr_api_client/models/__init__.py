@@ -15,6 +15,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from cloudmersive_ocr_api_client.models.get_page_angle_result import GetPageAngleResult
 from cloudmersive_ocr_api_client.models.image_to_lines_with_location_result import ImageToLinesWithLocationResult
 from cloudmersive_ocr_api_client.models.image_to_text_response import ImageToTextResponse
 from cloudmersive_ocr_api_client.models.image_to_words_with_location_result import ImageToWordsWithLocationResult

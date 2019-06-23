@@ -147,6 +147,9 @@ class OcrPageResult(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(OcrPageResult, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

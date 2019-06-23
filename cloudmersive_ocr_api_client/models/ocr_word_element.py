@@ -371,6 +371,9 @@ class OcrWordElement(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(OcrWordElement, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

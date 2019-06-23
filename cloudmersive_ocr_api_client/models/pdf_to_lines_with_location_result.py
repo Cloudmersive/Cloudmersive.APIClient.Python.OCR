@@ -117,6 +117,9 @@ class PdfToLinesWithLocationResult(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(PdfToLinesWithLocationResult, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 

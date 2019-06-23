@@ -121,6 +121,9 @@ class OcrLineElement(object):
                 ))
             else:
                 result[attr] = value
+        if issubclass(OcrLineElement, dict):
+            for key, value in self.items():
+                result[key] = value
 
         return result
 
