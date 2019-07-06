@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **preprocessing_binarize**
-> object preprocessing_binarize(image_file)
+> str preprocessing_binarize(image_file)
 
 Convert an image of text into a binarized (light and dark) view
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**object**
+**str**
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **preprocessing_binarize_advanced**
-> object preprocessing_binarize_advanced(image_file)
+> str preprocessing_binarize_advanced(image_file)
 
 Convert an image of text into a binary (light and dark) view with ML
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**object**
+**str**
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **preprocessing_unrotate**
-> object preprocessing_unrotate(image_file)
+> str preprocessing_unrotate(image_file)
 
 Detect and unrotate a document image
 
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**object**
+**str**
 
 ### Authorization
 
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **preprocessing_unskew**
-> object preprocessing_unskew(image_file)
+> str preprocessing_unskew(image_file)
 
 Detect and unskew a photo of a document
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**object**
+**str**
 
 ### Authorization
 
