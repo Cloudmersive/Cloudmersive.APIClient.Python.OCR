@@ -34,25 +34,30 @@ class PhotoToWordsWithLocationResult(object):
     """
     swagger_types = {
         'successful': 'bool',
-        'text_elements': 'list[OcrPhotoTextElement]'
+        'text_elements': 'list[OcrPhotoTextElement]',
+        'diagnostic_image': 'str'
     }
 
     attribute_map = {
         'successful': 'Successful',
-        'text_elements': 'TextElements'
+        'text_elements': 'TextElements',
+        'diagnostic_image': 'DiagnosticImage'
     }
 
-    def __init__(self, successful=None, text_elements=None):  # noqa: E501
+    def __init__(self, successful=None, text_elements=None, diagnostic_image=None):  # noqa: E501
         """PhotoToWordsWithLocationResult - a model defined in Swagger"""  # noqa: E501
 
         self._successful = None
         self._text_elements = None
+        self._diagnostic_image = None
         self.discriminator = None
 
         if successful is not None:
             self.successful = successful
         if text_elements is not None:
             self.text_elements = text_elements
+        if diagnostic_image is not None:
+            self.diagnostic_image = diagnostic_image
 
     @property
     def successful(self):
@@ -97,6 +102,31 @@ class PhotoToWordsWithLocationResult(object):
         """
 
         self._text_elements = text_elements
+
+    @property
+    def diagnostic_image(self):
+        """Gets the diagnostic_image of this PhotoToWordsWithLocationResult.  # noqa: E501
+
+        Typically null.  To analyze OCR performance, enable diagnostic mode by adding the HTTP header \"DiagnosticMode\" with the value \"true\".  When this is true, a diagnostic image showing the details of the OCR result will be set in PNG format into DiagnosticImage.  # noqa: E501
+
+        :return: The diagnostic_image of this PhotoToWordsWithLocationResult.  # noqa: E501
+        :rtype: str
+        """
+        return self._diagnostic_image
+
+    @diagnostic_image.setter
+    def diagnostic_image(self, diagnostic_image):
+        """Sets the diagnostic_image of this PhotoToWordsWithLocationResult.
+
+        Typically null.  To analyze OCR performance, enable diagnostic mode by adding the HTTP header \"DiagnosticMode\" with the value \"true\".  When this is true, a diagnostic image showing the details of the OCR result will be set in PNG format into DiagnosticImage.  # noqa: E501
+
+        :param diagnostic_image: The diagnostic_image of this PhotoToWordsWithLocationResult.  # noqa: E501
+        :type: str
+        """
+        if diagnostic_image is not None and not re.search(r'^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$', diagnostic_image):  # noqa: E501
+            raise ValueError(r"Invalid value for `diagnostic_image`, must be a follow pattern or equal to `/^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$/`")  # noqa: E501
+
+        self._diagnostic_image = diagnostic_image
 
     def to_dict(self):
         """Returns the model properties as a dict"""
