@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "cloudmersive_ocr_api_client"
-VERSION = "2.0.4"
+VERSION = "2.0.5"
 # To install the library, run the following
 #
 # python setup.py install
