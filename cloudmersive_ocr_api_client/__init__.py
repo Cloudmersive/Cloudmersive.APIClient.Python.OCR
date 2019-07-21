@@ -25,6 +25,7 @@ from cloudmersive_ocr_api_client.api.receipts_api import ReceiptsApi
 from cloudmersive_ocr_api_client.api_client import ApiClient
 from cloudmersive_ocr_api_client.configuration import Configuration
 # import models into sdk package
+from cloudmersive_ocr_api_client.models.business_card_recognition_result import BusinessCardRecognitionResult
 from cloudmersive_ocr_api_client.models.get_page_angle_result import GetPageAngleResult
 from cloudmersive_ocr_api_client.models.image_to_lines_with_location_result import ImageToLinesWithLocationResult
 from cloudmersive_ocr_api_client.models.image_to_text_response import ImageToTextResponse

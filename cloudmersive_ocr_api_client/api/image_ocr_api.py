@@ -247,6 +247,105 @@ class ImageOcrApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def image_ocr_photo_recognize_business_card(self, image_file, **kwargs):  # noqa: E501
+        """Recognize a photo of a business card, extract key business information  # noqa: E501
+
+        Analyzes a photograph of a business card as input, and outputs key business information such as the name of the person, name of the business, the address of the business, the phone number, the email address and more.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.image_ocr_photo_recognize_business_card(image_file, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param file image_file: Image file to perform OCR on.  Common file formats such as PNG, JPEG are supported. (required)
+        :return: BusinessCardRecognitionResult
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.image_ocr_photo_recognize_business_card_with_http_info(image_file, **kwargs)  # noqa: E501
+        else:
+            (data) = self.image_ocr_photo_recognize_business_card_with_http_info(image_file, **kwargs)  # noqa: E501
+            return data
+
+    def image_ocr_photo_recognize_business_card_with_http_info(self, image_file, **kwargs):  # noqa: E501
+        """Recognize a photo of a business card, extract key business information  # noqa: E501
+
+        Analyzes a photograph of a business card as input, and outputs key business information such as the name of the person, name of the business, the address of the business, the phone number, the email address and more.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.image_ocr_photo_recognize_business_card_with_http_info(image_file, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param file image_file: Image file to perform OCR on.  Common file formats such as PNG, JPEG are supported. (required)
+        :return: BusinessCardRecognitionResult
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['image_file']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method image_ocr_photo_recognize_business_card" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'image_file' is set
+        if ('image_file' not in params or
+                params['image_file'] is None):
+            raise ValueError("Missing the required parameter `image_file` when calling `image_ocr_photo_recognize_business_card`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'image_file' in params:
+            local_var_files['imageFile'] = params['image_file']  # noqa: E501
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json', 'text/json', 'application/xml', 'text/xml'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Apikey']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/ocr/photo/recognize/business-card', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='BusinessCardRecognitionResult',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def image_ocr_photo_recognize_receipt(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a receipt, extract key business information  # noqa: E501
 

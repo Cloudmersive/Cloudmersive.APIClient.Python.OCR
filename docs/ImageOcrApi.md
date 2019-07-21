@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**image_ocr_image_lines_with_location**](ImageOcrApi.md#image_ocr_image_lines_with_location) | **POST** /ocr/image/to/lines-with-location | Convert a scanned image into words with location
 [**image_ocr_image_words_with_location**](ImageOcrApi.md#image_ocr_image_words_with_location) | **POST** /ocr/image/to/words-with-location | Convert a scanned image into words with location
+[**image_ocr_photo_recognize_business_card**](ImageOcrApi.md#image_ocr_photo_recognize_business_card) | **POST** /ocr/photo/recognize/business-card | Recognize a photo of a business card, extract key business information
 [**image_ocr_photo_recognize_receipt**](ImageOcrApi.md#image_ocr_photo_recognize_receipt) | **POST** /ocr/photo/recognize/receipt | Recognize a photo of a receipt, extract key business information
 [**image_ocr_photo_to_text**](ImageOcrApi.md#image_ocr_photo_to_text) | **POST** /ocr/photo/toText | Convert a photo of a document into text
 [**image_ocr_photo_words_with_location**](ImageOcrApi.md#image_ocr_photo_words_with_location) | **POST** /ocr/photo/to/words-with-location | Convert a photo of a document or receipt into words with location
@@ -116,6 +117,60 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ImageToWordsWithLocationResult**](ImageToWordsWithLocationResult.md)
+
+### Authorization
+
+[Apikey](../README.md#Apikey)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **image_ocr_photo_recognize_business_card**
+> BusinessCardRecognitionResult image_ocr_photo_recognize_business_card(image_file)
+
+Recognize a photo of a business card, extract key business information
+
+Analyzes a photograph of a business card as input, and outputs key business information such as the name of the person, name of the business, the address of the business, the phone number, the email address and more.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import cloudmersive_ocr_api_client
+from cloudmersive_ocr_api_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: Apikey
+configuration = cloudmersive_ocr_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = cloudmersive_ocr_api_client.ImageOcrApi(cloudmersive_ocr_api_client.ApiClient(configuration))
+image_file = '/path/to/file.txt' # file | Image file to perform OCR on.  Common file formats such as PNG, JPEG are supported.
+
+try:
+    # Recognize a photo of a business card, extract key business information
+    api_response = api_instance.image_ocr_photo_recognize_business_card(image_file)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ImageOcrApi->image_ocr_photo_recognize_business_card: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **image_file** | **file**| Image file to perform OCR on.  Common file formats such as PNG, JPEG are supported. | 
+
+### Return type
+
+[**BusinessCardRecognitionResult**](BusinessCardRecognitionResult.md)
 
 ### Authorization
 
