@@ -58,6 +58,7 @@ class ImageToWordsWithLocationResult(object):
     def successful(self):
         """Gets the successful of this ImageToWordsWithLocationResult.  # noqa: E501
 
+        True if successful, false otherwise  # noqa: E501
 
         :return: The successful of this ImageToWordsWithLocationResult.  # noqa: E501
         :rtype: bool
@@ -68,6 +69,7 @@ class ImageToWordsWithLocationResult(object):
     def successful(self, successful):
         """Sets the successful of this ImageToWordsWithLocationResult.
 
+        True if successful, false otherwise  # noqa: E501
 
         :param successful: The successful of this ImageToWordsWithLocationResult.  # noqa: E501
         :type: bool

@@ -56,6 +56,7 @@ class ReceiptLineItem(object):
     def item_description(self):
         """Gets the item_description of this ReceiptLineItem.  # noqa: E501
 
+        Description of the item  # noqa: E501
 
         :return: The item_description of this ReceiptLineItem.  # noqa: E501
         :rtype: str
@@ -66,6 +67,7 @@ class ReceiptLineItem(object):
     def item_description(self, item_description):
         """Sets the item_description of this ReceiptLineItem.
 
+        Description of the item  # noqa: E501
 
         :param item_description: The item_description of this ReceiptLineItem.  # noqa: E501
         :type: str
@@ -77,6 +79,7 @@ class ReceiptLineItem(object):
     def item_price(self):
         """Gets the item_price of this ReceiptLineItem.  # noqa: E501
 
+        Price of the item if available  # noqa: E501
 
         :return: The item_price of this ReceiptLineItem.  # noqa: E501
         :rtype: float
@@ -87,6 +90,7 @@ class ReceiptLineItem(object):
     def item_price(self, item_price):
         """Sets the item_price of this ReceiptLineItem.
 
+        Price of the item if available  # noqa: E501
 
         :param item_price: The item_price of this ReceiptLineItem.  # noqa: E501
         :type: float

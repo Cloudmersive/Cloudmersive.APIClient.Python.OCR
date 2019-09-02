@@ -111,6 +111,7 @@ class FormFieldDefinition(object):
     def field_id(self):
         """Gets the field_id of this FormFieldDefinition.  # noqa: E501
 
+        The identifier of the field; use this to identify which field is being referenced  # noqa: E501
 
         :return: The field_id of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -121,6 +122,7 @@ class FormFieldDefinition(object):
     def field_id(self, field_id):
         """Sets the field_id of this FormFieldDefinition.
 
+        The identifier of the field; use this to identify which field is being referenced  # noqa: E501
 
         :param field_id: The field_id of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -132,6 +134,7 @@ class FormFieldDefinition(object):
     def left_anchor(self):
         """Gets the left_anchor of this FormFieldDefinition.  # noqa: E501
 
+        Optional - the left-hand anchor of the field  # noqa: E501
 
         :return: The left_anchor of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -142,6 +145,7 @@ class FormFieldDefinition(object):
     def left_anchor(self, left_anchor):
         """Sets the left_anchor of this FormFieldDefinition.
 
+        Optional - the left-hand anchor of the field  # noqa: E501
 
         :param left_anchor: The left_anchor of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -153,6 +157,7 @@ class FormFieldDefinition(object):
     def top_anchor(self):
         """Gets the top_anchor of this FormFieldDefinition.  # noqa: E501
 
+        Optional - the top anchor of the field  # noqa: E501
 
         :return: The top_anchor of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -163,6 +168,7 @@ class FormFieldDefinition(object):
     def top_anchor(self, top_anchor):
         """Sets the top_anchor of this FormFieldDefinition.
 
+        Optional - the top anchor of the field  # noqa: E501
 
         :param top_anchor: The top_anchor of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -174,6 +180,7 @@ class FormFieldDefinition(object):
     def anchor_mode(self):
         """Gets the anchor_mode of this FormFieldDefinition.  # noqa: E501
 
+        Optional - the matching mode for the anchor.  Possible values are Complete (requires the entire anchor to match) and Partial (allows only part of the anchor to match).  Default is Partial.  # noqa: E501
 
         :return: The anchor_mode of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -184,6 +191,7 @@ class FormFieldDefinition(object):
     def anchor_mode(self, anchor_mode):
         """Sets the anchor_mode of this FormFieldDefinition.
 
+        Optional - the matching mode for the anchor.  Possible values are Complete (requires the entire anchor to match) and Partial (allows only part of the anchor to match).  Default is Partial.  # noqa: E501
 
         :param anchor_mode: The anchor_mode of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -195,6 +203,7 @@ class FormFieldDefinition(object):
     def data_type(self):
         """Gets the data_type of this FormFieldDefinition.  # noqa: E501
 
+        The data type of the field; possible values are INTEGER (Integer value), STRING (Arbitrary string value, spaces are permitted), DATE (Date in a structured format), DECIMAL (Decimal number), ALPHANUMERIC (Continuous alphanumeric string with no spaces), STRINGNOWHITESPACE (A string that contains no whitespace characters), SERIALNUMBER (A serial-number style string that contains letters and numbers, and certain symbols; must contain at least one number), ALPHAONLY (Alphabet characters only, no numbers or symbols or whitespace)  # noqa: E501
 
         :return: The data_type of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -205,6 +214,7 @@ class FormFieldDefinition(object):
     def data_type(self, data_type):
         """Sets the data_type of this FormFieldDefinition.
 
+        The data type of the field; possible values are INTEGER (Integer value), STRING (Arbitrary string value, spaces are permitted), DATE (Date in a structured format), DECIMAL (Decimal number), ALPHANUMERIC (Continuous alphanumeric string with no spaces), STRINGNOWHITESPACE (A string that contains no whitespace characters), SERIALNUMBER (A serial-number style string that contains letters and numbers, and certain symbols; must contain at least one number), ALPHAONLY (Alphabet characters only, no numbers or symbols or whitespace)  # noqa: E501
 
         :param data_type: The data_type of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -216,6 +226,7 @@ class FormFieldDefinition(object):
     def target_digit_count(self):
         """Gets the target_digit_count of this FormFieldDefinition.  # noqa: E501
 
+        Optional - the target number of digits in the field; useful for fixed-length fields  # noqa: E501
 
         :return: The target_digit_count of this FormFieldDefinition.  # noqa: E501
         :rtype: int
@@ -226,6 +237,7 @@ class FormFieldDefinition(object):
     def target_digit_count(self, target_digit_count):
         """Sets the target_digit_count of this FormFieldDefinition.
 
+        Optional - the target number of digits in the field; useful for fixed-length fields  # noqa: E501
 
         :param target_digit_count: The target_digit_count of this FormFieldDefinition.  # noqa: E501
         :type: int
@@ -237,6 +249,7 @@ class FormFieldDefinition(object):
     def minimum_character_count(self):
         """Gets the minimum_character_count of this FormFieldDefinition.  # noqa: E501
 
+        Optional - the target number of digits in the field; useful for fixed-length fields  # noqa: E501
 
         :return: The minimum_character_count of this FormFieldDefinition.  # noqa: E501
         :rtype: int
@@ -247,6 +260,7 @@ class FormFieldDefinition(object):
     def minimum_character_count(self, minimum_character_count):
         """Sets the minimum_character_count of this FormFieldDefinition.
 
+        Optional - the target number of digits in the field; useful for fixed-length fields  # noqa: E501
 
         :param minimum_character_count: The minimum_character_count of this FormFieldDefinition.  # noqa: E501
         :type: int
@@ -258,6 +272,7 @@ class FormFieldDefinition(object):
     def allow_numeric_digits(self):
         """Gets the allow_numeric_digits of this FormFieldDefinition.  # noqa: E501
 
+        Optional - set to false to block values that contain numeric digits, set to true to allow numeric digits  # noqa: E501
 
         :return: The allow_numeric_digits of this FormFieldDefinition.  # noqa: E501
         :rtype: bool
@@ -268,6 +283,7 @@ class FormFieldDefinition(object):
     def allow_numeric_digits(self, allow_numeric_digits):
         """Sets the allow_numeric_digits of this FormFieldDefinition.
 
+        Optional - set to false to block values that contain numeric digits, set to true to allow numeric digits  # noqa: E501
 
         :param allow_numeric_digits: The allow_numeric_digits of this FormFieldDefinition.  # noqa: E501
         :type: bool
@@ -279,6 +295,7 @@ class FormFieldDefinition(object):
     def vertical_alignment_type(self):
         """Gets the vertical_alignment_type of this FormFieldDefinition.  # noqa: E501
 
+        Vertical alignment of target value area relative to the field anchor; Possible values are VCenter, Top, Bottom  # noqa: E501
 
         :return: The vertical_alignment_type of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -289,6 +306,7 @@ class FormFieldDefinition(object):
     def vertical_alignment_type(self, vertical_alignment_type):
         """Sets the vertical_alignment_type of this FormFieldDefinition.
 
+        Vertical alignment of target value area relative to the field anchor; Possible values are VCenter, Top, Bottom  # noqa: E501
 
         :param vertical_alignment_type: The vertical_alignment_type of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -300,6 +318,7 @@ class FormFieldDefinition(object):
     def horizontal_alignment_type(self):
         """Gets the horizontal_alignment_type of this FormFieldDefinition.  # noqa: E501
 
+        Horizontal alignment of target value area relative to the field anchor; Possible values are Left, Right  # noqa: E501
 
         :return: The horizontal_alignment_type of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -310,6 +329,7 @@ class FormFieldDefinition(object):
     def horizontal_alignment_type(self, horizontal_alignment_type):
         """Sets the horizontal_alignment_type of this FormFieldDefinition.
 
+        Horizontal alignment of target value area relative to the field anchor; Possible values are Left, Right  # noqa: E501
 
         :param horizontal_alignment_type: The horizontal_alignment_type of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -321,6 +341,7 @@ class FormFieldDefinition(object):
     def target_field_width_relative(self):
         """Gets the target_field_width_relative of this FormFieldDefinition.  # noqa: E501
 
+        Optional - scale factor for target field width - relative to width of field title; a value of 1.0 indicates the target value area has the same width as the field value as occurring in the image; a value of 2.0 would indicate that the target value area has 2 times the width of the field value as occurring in the image.  # noqa: E501
 
         :return: The target_field_width_relative of this FormFieldDefinition.  # noqa: E501
         :rtype: float
@@ -331,6 +352,7 @@ class FormFieldDefinition(object):
     def target_field_width_relative(self, target_field_width_relative):
         """Sets the target_field_width_relative of this FormFieldDefinition.
 
+        Optional - scale factor for target field width - relative to width of field title; a value of 1.0 indicates the target value area has the same width as the field value as occurring in the image; a value of 2.0 would indicate that the target value area has 2 times the width of the field value as occurring in the image.  # noqa: E501
 
         :param target_field_width_relative: The target_field_width_relative of this FormFieldDefinition.  # noqa: E501
         :type: float
@@ -342,6 +364,7 @@ class FormFieldDefinition(object):
     def target_field_height_relative(self):
         """Gets the target_field_height_relative of this FormFieldDefinition.  # noqa: E501
 
+        Optional - scale factor for target field height - relative to height of field title  # noqa: E501
 
         :return: The target_field_height_relative of this FormFieldDefinition.  # noqa: E501
         :rtype: float
@@ -352,6 +375,7 @@ class FormFieldDefinition(object):
     def target_field_height_relative(self, target_field_height_relative):
         """Sets the target_field_height_relative of this FormFieldDefinition.
 
+        Optional - scale factor for target field height - relative to height of field title  # noqa: E501
 
         :param target_field_height_relative: The target_field_height_relative of this FormFieldDefinition.  # noqa: E501
         :type: float
@@ -363,6 +387,7 @@ class FormFieldDefinition(object):
     def ignore(self):
         """Gets the ignore of this FormFieldDefinition.  # noqa: E501
 
+        Optional - Ignore any result items that contain a partial or complete match with these text strings  # noqa: E501
 
         :return: The ignore of this FormFieldDefinition.  # noqa: E501
         :rtype: list[str]
@@ -373,6 +398,7 @@ class FormFieldDefinition(object):
     def ignore(self, ignore):
         """Sets the ignore of this FormFieldDefinition.
 
+        Optional - Ignore any result items that contain a partial or complete match with these text strings  # noqa: E501
 
         :param ignore: The ignore of this FormFieldDefinition.  # noqa: E501
         :type: list[str]

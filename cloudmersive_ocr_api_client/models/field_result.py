@@ -59,6 +59,7 @@ class FieldResult(object):
     def target_field(self):
         """Gets the target_field of this FieldResult.  # noqa: E501
 
+        Target field to extract from the form  # noqa: E501
 
         :return: The target_field of this FieldResult.  # noqa: E501
         :rtype: FormFieldDefinition
@@ -69,6 +70,7 @@ class FieldResult(object):
     def target_field(self, target_field):
         """Sets the target_field of this FieldResult.
 
+        Target field to extract from the form  # noqa: E501
 
         :param target_field: The target_field of this FieldResult.  # noqa: E501
         :type: FormFieldDefinition
@@ -80,6 +82,7 @@ class FieldResult(object):
     def field_values(self):
         """Gets the field_values of this FieldResult.  # noqa: E501
 
+        Result field value(s) extracted  # noqa: E501
 
         :return: The field_values of this FieldResult.  # noqa: E501
         :rtype: list[OcrPhotoTextElement]
@@ -90,6 +93,7 @@ class FieldResult(object):
     def field_values(self, field_values):
         """Sets the field_values of this FieldResult.
 
+        Result field value(s) extracted  # noqa: E501
 
         :param field_values: The field_values of this FieldResult.  # noqa: E501
         :type: list[OcrPhotoTextElement]

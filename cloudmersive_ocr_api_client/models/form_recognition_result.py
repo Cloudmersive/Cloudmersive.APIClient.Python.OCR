@@ -58,6 +58,7 @@ class FormRecognitionResult(object):
     def successful(self):
         """Gets the successful of this FormRecognitionResult.  # noqa: E501
 
+        True if the operation was successful, false otherwise  # noqa: E501
 
         :return: The successful of this FormRecognitionResult.  # noqa: E501
         :rtype: bool
@@ -68,6 +69,7 @@ class FormRecognitionResult(object):
     def successful(self, successful):
         """Sets the successful of this FormRecognitionResult.
 
+        True if the operation was successful, false otherwise  # noqa: E501
 
         :param successful: The successful of this FormRecognitionResult.  # noqa: E501
         :type: bool
@@ -79,6 +81,7 @@ class FormRecognitionResult(object):
     def field_value_extraction_result(self):
         """Gets the field_value_extraction_result of this FormRecognitionResult.  # noqa: E501
 
+        Result of form field OCR data extraction  # noqa: E501
 
         :return: The field_value_extraction_result of this FormRecognitionResult.  # noqa: E501
         :rtype: list[FieldResult]
@@ -89,6 +92,7 @@ class FormRecognitionResult(object):
     def field_value_extraction_result(self, field_value_extraction_result):
         """Sets the field_value_extraction_result of this FormRecognitionResult.
 
+        Result of form field OCR data extraction  # noqa: E501
 
         :param field_value_extraction_result: The field_value_extraction_result of this FormRecognitionResult.  # noqa: E501
         :type: list[FieldResult]

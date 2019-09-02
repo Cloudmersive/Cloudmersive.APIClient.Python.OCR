@@ -88,6 +88,7 @@ class ReceiptRecognitionResult(object):
     def successful(self):
         """Gets the successful of this ReceiptRecognitionResult.  # noqa: E501
 
+        True if the operation was successful, false otherwise  # noqa: E501
 
         :return: The successful of this ReceiptRecognitionResult.  # noqa: E501
         :rtype: bool
@@ -98,6 +99,7 @@ class ReceiptRecognitionResult(object):
     def successful(self, successful):
         """Sets the successful of this ReceiptRecognitionResult.
 
+        True if the operation was successful, false otherwise  # noqa: E501
 
         :param successful: The successful of this ReceiptRecognitionResult.  # noqa: E501
         :type: bool
@@ -109,6 +111,7 @@ class ReceiptRecognitionResult(object):
     def timestamp(self):
         """Gets the timestamp of this ReceiptRecognitionResult.  # noqa: E501
 
+        The date and time printed on the receipt (if included on the receipt)  # noqa: E501
 
         :return: The timestamp of this ReceiptRecognitionResult.  # noqa: E501
         :rtype: datetime
@@ -119,6 +122,7 @@ class ReceiptRecognitionResult(object):
     def timestamp(self, timestamp):
         """Sets the timestamp of this ReceiptRecognitionResult.
 
+        The date and time printed on the receipt (if included on the receipt)  # noqa: E501
 
         :param timestamp: The timestamp of this ReceiptRecognitionResult.  # noqa: E501
         :type: datetime
@@ -130,6 +134,7 @@ class ReceiptRecognitionResult(object):
     def business_name(self):
         """Gets the business_name of this ReceiptRecognitionResult.  # noqa: E501
 
+        The name of the business printed on the receipt (if included on the receipt)  # noqa: E501
 
         :return: The business_name of this ReceiptRecognitionResult.  # noqa: E501
         :rtype: str
@@ -140,6 +145,7 @@ class ReceiptRecognitionResult(object):
     def business_name(self, business_name):
         """Sets the business_name of this ReceiptRecognitionResult.
 
+        The name of the business printed on the receipt (if included on the receipt)  # noqa: E501
 
         :param business_name: The business_name of this ReceiptRecognitionResult.  # noqa: E501
         :type: str
@@ -151,6 +157,7 @@ class ReceiptRecognitionResult(object):
     def business_website(self):
         """Gets the business_website of this ReceiptRecognitionResult.  # noqa: E501
 
+        The website URL of the business printed on the receipt (if included on the receipt)  # noqa: E501
 
         :return: The business_website of this ReceiptRecognitionResult.  # noqa: E501
         :rtype: str
@@ -161,6 +168,7 @@ class ReceiptRecognitionResult(object):
     def business_website(self, business_website):
         """Sets the business_website of this ReceiptRecognitionResult.
 
+        The website URL of the business printed on the receipt (if included on the receipt)  # noqa: E501
 
         :param business_website: The business_website of this ReceiptRecognitionResult.  # noqa: E501
         :type: str
@@ -172,6 +180,7 @@ class ReceiptRecognitionResult(object):
     def address_string(self):
         """Gets the address_string of this ReceiptRecognitionResult.  # noqa: E501
 
+        The address of the business printed on the receipt (if included on the receipt)  # noqa: E501
 
         :return: The address_string of this ReceiptRecognitionResult.  # noqa: E501
         :rtype: str
@@ -182,6 +191,7 @@ class ReceiptRecognitionResult(object):
     def address_string(self, address_string):
         """Sets the address_string of this ReceiptRecognitionResult.
 
+        The address of the business printed on the receipt (if included on the receipt)  # noqa: E501
 
         :param address_string: The address_string of this ReceiptRecognitionResult.  # noqa: E501
         :type: str
@@ -193,6 +203,7 @@ class ReceiptRecognitionResult(object):
     def phone_number(self):
         """Gets the phone_number of this ReceiptRecognitionResult.  # noqa: E501
 
+        The phone number printed on the receipt (if included on the receipt)  # noqa: E501
 
         :return: The phone_number of this ReceiptRecognitionResult.  # noqa: E501
         :rtype: str
@@ -203,6 +214,7 @@ class ReceiptRecognitionResult(object):
     def phone_number(self, phone_number):
         """Sets the phone_number of this ReceiptRecognitionResult.
 
+        The phone number printed on the receipt (if included on the receipt)  # noqa: E501
 
         :param phone_number: The phone_number of this ReceiptRecognitionResult.  # noqa: E501
         :type: str
@@ -214,6 +226,7 @@ class ReceiptRecognitionResult(object):
     def receipt_items(self):
         """Gets the receipt_items of this ReceiptRecognitionResult.  # noqa: E501
 
+        The individual line items comprising the order; does not include total (see ReceiptTotal)  # noqa: E501
 
         :return: The receipt_items of this ReceiptRecognitionResult.  # noqa: E501
         :rtype: list[ReceiptLineItem]
@@ -224,6 +237,7 @@ class ReceiptRecognitionResult(object):
     def receipt_items(self, receipt_items):
         """Sets the receipt_items of this ReceiptRecognitionResult.
 
+        The individual line items comprising the order; does not include total (see ReceiptTotal)  # noqa: E501
 
         :param receipt_items: The receipt_items of this ReceiptRecognitionResult.  # noqa: E501
         :type: list[ReceiptLineItem]
@@ -235,6 +249,7 @@ class ReceiptRecognitionResult(object):
     def receipt_total(self):
         """Gets the receipt_total of this ReceiptRecognitionResult.  # noqa: E501
 
+        The total monetary value of the receipt (if included on the receipt)  # noqa: E501
 
         :return: The receipt_total of this ReceiptRecognitionResult.  # noqa: E501
         :rtype: float
@@ -245,6 +260,7 @@ class ReceiptRecognitionResult(object):
     def receipt_total(self, receipt_total):
         """Sets the receipt_total of this ReceiptRecognitionResult.
 
+        The total monetary value of the receipt (if included on the receipt)  # noqa: E501
 
         :param receipt_total: The receipt_total of this ReceiptRecognitionResult.  # noqa: E501
         :type: float

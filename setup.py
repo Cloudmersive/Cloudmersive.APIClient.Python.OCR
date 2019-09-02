@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "cloudmersive_ocr_api_client"
-VERSION = "2.0.7"
+VERSION = "2.0.8"
 # To install the library, run the following
 #
 # python setup.py install
@@ -35,7 +35,7 @@ setup(
     version=VERSION,
     description="ocrapi",
     author_email="",
-    url="",
+    url="https://www.cloudmersive.com/ocr-api",
     keywords=["Swagger", "ocrapi"],
     install_requires=REQUIRES,
     packages=find_packages(),

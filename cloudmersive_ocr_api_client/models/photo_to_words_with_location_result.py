@@ -63,6 +63,7 @@ class PhotoToWordsWithLocationResult(object):
     def successful(self):
         """Gets the successful of this PhotoToWordsWithLocationResult.  # noqa: E501
 
+        True if successful, false otherwise  # noqa: E501
 
         :return: The successful of this PhotoToWordsWithLocationResult.  # noqa: E501
         :rtype: bool
@@ -73,6 +74,7 @@ class PhotoToWordsWithLocationResult(object):
     def successful(self, successful):
         """Sets the successful of this PhotoToWordsWithLocationResult.
 
+        True if successful, false otherwise  # noqa: E501
 
         :param successful: The successful of this PhotoToWordsWithLocationResult.  # noqa: E501
         :type: bool

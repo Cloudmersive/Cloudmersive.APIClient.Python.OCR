@@ -53,6 +53,7 @@ class FormDefinitionTemplate(object):
     def field_definitions(self):
         """Gets the field_definitions of this FormDefinitionTemplate.  # noqa: E501
 
+        Field definitions in the template  # noqa: E501
 
         :return: The field_definitions of this FormDefinitionTemplate.  # noqa: E501
         :rtype: list[FormFieldDefinition]
@@ -63,6 +64,7 @@ class FormDefinitionTemplate(object):
     def field_definitions(self, field_definitions):
         """Sets the field_definitions of this FormDefinitionTemplate.
 
+        Field definitions in the template  # noqa: E501
 
         :param field_definitions: The field_definitions of this FormDefinitionTemplate.  # noqa: E501
         :type: list[FormFieldDefinition]

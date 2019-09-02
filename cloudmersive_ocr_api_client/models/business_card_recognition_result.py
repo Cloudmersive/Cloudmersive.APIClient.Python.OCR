@@ -86,6 +86,7 @@ class BusinessCardRecognitionResult(object):
     def successful(self):
         """Gets the successful of this BusinessCardRecognitionResult.  # noqa: E501
 
+        True if the operation was successful, false otherwise  # noqa: E501
 
         :return: The successful of this BusinessCardRecognitionResult.  # noqa: E501
         :rtype: bool
@@ -96,6 +97,7 @@ class BusinessCardRecognitionResult(object):
     def successful(self, successful):
         """Sets the successful of this BusinessCardRecognitionResult.
 
+        True if the operation was successful, false otherwise  # noqa: E501
 
         :param successful: The successful of this BusinessCardRecognitionResult.  # noqa: E501
         :type: bool
@@ -107,6 +109,7 @@ class BusinessCardRecognitionResult(object):
     def person_name(self):
         """Gets the person_name of this BusinessCardRecognitionResult.  # noqa: E501
 
+        The name of the person printed on the business card (if included on the business card)  # noqa: E501
 
         :return: The person_name of this BusinessCardRecognitionResult.  # noqa: E501
         :rtype: str
@@ -117,6 +120,7 @@ class BusinessCardRecognitionResult(object):
     def person_name(self, person_name):
         """Sets the person_name of this BusinessCardRecognitionResult.
 
+        The name of the person printed on the business card (if included on the business card)  # noqa: E501
 
         :param person_name: The person_name of this BusinessCardRecognitionResult.  # noqa: E501
         :type: str
@@ -128,6 +132,7 @@ class BusinessCardRecognitionResult(object):
     def person_title(self):
         """Gets the person_title of this BusinessCardRecognitionResult.  # noqa: E501
 
+        The title of the person printed on the business card (if included on the business card)  # noqa: E501
 
         :return: The person_title of this BusinessCardRecognitionResult.  # noqa: E501
         :rtype: str
@@ -138,6 +143,7 @@ class BusinessCardRecognitionResult(object):
     def person_title(self, person_title):
         """Sets the person_title of this BusinessCardRecognitionResult.
 
+        The title of the person printed on the business card (if included on the business card)  # noqa: E501
 
         :param person_title: The person_title of this BusinessCardRecognitionResult.  # noqa: E501
         :type: str
@@ -149,6 +155,7 @@ class BusinessCardRecognitionResult(object):
     def business_name(self):
         """Gets the business_name of this BusinessCardRecognitionResult.  # noqa: E501
 
+        The name of the business printed on the business card (if included on the business card)  # noqa: E501
 
         :return: The business_name of this BusinessCardRecognitionResult.  # noqa: E501
         :rtype: str
@@ -159,6 +166,7 @@ class BusinessCardRecognitionResult(object):
     def business_name(self, business_name):
         """Sets the business_name of this BusinessCardRecognitionResult.
 
+        The name of the business printed on the business card (if included on the business card)  # noqa: E501
 
         :param business_name: The business_name of this BusinessCardRecognitionResult.  # noqa: E501
         :type: str
@@ -170,6 +178,7 @@ class BusinessCardRecognitionResult(object):
     def address_string(self):
         """Gets the address_string of this BusinessCardRecognitionResult.  # noqa: E501
 
+        The address printed on the business card (if included on the business card)  # noqa: E501
 
         :return: The address_string of this BusinessCardRecognitionResult.  # noqa: E501
         :rtype: str
@@ -180,6 +189,7 @@ class BusinessCardRecognitionResult(object):
     def address_string(self, address_string):
         """Sets the address_string of this BusinessCardRecognitionResult.
 
+        The address printed on the business card (if included on the business card)  # noqa: E501
 
         :param address_string: The address_string of this BusinessCardRecognitionResult.  # noqa: E501
         :type: str
@@ -191,6 +201,7 @@ class BusinessCardRecognitionResult(object):
     def phone_number(self):
         """Gets the phone_number of this BusinessCardRecognitionResult.  # noqa: E501
 
+        The phone number printed on the business card (if included on the business card)  # noqa: E501
 
         :return: The phone_number of this BusinessCardRecognitionResult.  # noqa: E501
         :rtype: str
@@ -201,6 +212,7 @@ class BusinessCardRecognitionResult(object):
     def phone_number(self, phone_number):
         """Sets the phone_number of this BusinessCardRecognitionResult.
 
+        The phone number printed on the business card (if included on the business card)  # noqa: E501
 
         :param phone_number: The phone_number of this BusinessCardRecognitionResult.  # noqa: E501
         :type: str
@@ -212,6 +224,7 @@ class BusinessCardRecognitionResult(object):
     def email_address(self):
         """Gets the email_address of this BusinessCardRecognitionResult.  # noqa: E501
 
+        The email address printed on the business card (if included on the business card)  # noqa: E501
 
         :return: The email_address of this BusinessCardRecognitionResult.  # noqa: E501
         :rtype: str
@@ -222,6 +235,7 @@ class BusinessCardRecognitionResult(object):
     def email_address(self, email_address):
         """Sets the email_address of this BusinessCardRecognitionResult.
 
+        The email address printed on the business card (if included on the business card)  # noqa: E501
 
         :param email_address: The email_address of this BusinessCardRecognitionResult.  # noqa: E501
         :type: str
@@ -233,6 +247,7 @@ class BusinessCardRecognitionResult(object):
     def timestamp(self):
         """Gets the timestamp of this BusinessCardRecognitionResult.  # noqa: E501
 
+        The date and time printed on the business card (if included on the business card)  # noqa: E501
 
         :return: The timestamp of this BusinessCardRecognitionResult.  # noqa: E501
         :rtype: datetime
@@ -243,6 +258,7 @@ class BusinessCardRecognitionResult(object):
     def timestamp(self, timestamp):
         """Sets the timestamp of this BusinessCardRecognitionResult.
 
+        The date and time printed on the business card (if included on the business card)  # noqa: E501
 
         :param timestamp: The timestamp of this BusinessCardRecognitionResult.  # noqa: E501
         :type: datetime
