@@ -14,13 +14,13 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "cloudmersive_ocr_api_client"
-VERSION = "2.0.8"
+VERSION = "2.0.9"
 # To install the library, run the following
 #
 # python setup.py install
 #
 # prerequisite: setuptools
-# http://pypi.python.org/pypi/setuptools
+from os import path this_directory = path.abspath(path.dirname(__file__)) with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:     long_description = f.read()
 
 REQUIRES = [
     "certifi>=2017.4.17",
