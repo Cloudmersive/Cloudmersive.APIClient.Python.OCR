@@ -58,6 +58,7 @@ class PdfToTextResponse(object):
     def successful(self):
         """Gets the successful of this PdfToTextResponse.  # noqa: E501
 
+        True if successful, false otherwise  # noqa: E501
 
         :return: The successful of this PdfToTextResponse.  # noqa: E501
         :rtype: bool
@@ -68,6 +69,7 @@ class PdfToTextResponse(object):
     def successful(self, successful):
         """Sets the successful of this PdfToTextResponse.
 
+        True if successful, false otherwise  # noqa: E501
 
         :param successful: The successful of this PdfToTextResponse.  # noqa: E501
         :type: bool
@@ -79,6 +81,7 @@ class PdfToTextResponse(object):
     def ocr_pages(self):
         """Gets the ocr_pages of this PdfToTextResponse.  # noqa: E501
 
+        Page OCR results  # noqa: E501
 
         :return: The ocr_pages of this PdfToTextResponse.  # noqa: E501
         :rtype: list[OcrPageResult]
@@ -89,6 +92,7 @@ class PdfToTextResponse(object):
     def ocr_pages(self, ocr_pages):
         """Sets the ocr_pages of this PdfToTextResponse.
 
+        Page OCR results  # noqa: E501
 
         :param ocr_pages: The ocr_pages of this PdfToTextResponse.  # noqa: E501
         :type: list[OcrPageResult]

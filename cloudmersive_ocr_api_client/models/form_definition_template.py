@@ -17,6 +17,7 @@ import re  # noqa: F401
 import six
 
 from cloudmersive_ocr_api_client.models.form_field_definition import FormFieldDefinition  # noqa: F401,E501
+from cloudmersive_ocr_api_client.models.form_table_definition import FormTableDefinition  # noqa: F401,E501
 
 
 class FormDefinitionTemplate(object):
@@ -33,27 +34,32 @@ class FormDefinitionTemplate(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'field_definitions': 'list[FormFieldDefinition]'
+        'field_definitions': 'list[FormFieldDefinition]',
+        'table_definitions': 'list[FormTableDefinition]'
     }
 
     attribute_map = {
-        'field_definitions': 'FieldDefinitions'
+        'field_definitions': 'FieldDefinitions',
+        'table_definitions': 'TableDefinitions'
     }
 
-    def __init__(self, field_definitions=None):  # noqa: E501
+    def __init__(self, field_definitions=None, table_definitions=None):  # noqa: E501
         """FormDefinitionTemplate - a model defined in Swagger"""  # noqa: E501
 
         self._field_definitions = None
+        self._table_definitions = None
         self.discriminator = None
 
         if field_definitions is not None:
             self.field_definitions = field_definitions
+        if table_definitions is not None:
+            self.table_definitions = table_definitions
 
     @property
     def field_definitions(self):
         """Gets the field_definitions of this FormDefinitionTemplate.  # noqa: E501
 
-        Field definitions in the template  # noqa: E501
+        Field definitions in the template; a field is comprised of a key/value pair  # noqa: E501
 
         :return: The field_definitions of this FormDefinitionTemplate.  # noqa: E501
         :rtype: list[FormFieldDefinition]
@@ -64,13 +70,36 @@ class FormDefinitionTemplate(object):
     def field_definitions(self, field_definitions):
         """Sets the field_definitions of this FormDefinitionTemplate.
 
-        Field definitions in the template  # noqa: E501
+        Field definitions in the template; a field is comprised of a key/value pair  # noqa: E501
 
         :param field_definitions: The field_definitions of this FormDefinitionTemplate.  # noqa: E501
         :type: list[FormFieldDefinition]
         """
 
         self._field_definitions = field_definitions
+
+    @property
+    def table_definitions(self):
+        """Gets the table_definitions of this FormDefinitionTemplate.  # noqa: E501
+
+        Table definitions in the template; a table is comprised of columns and rows and exists in a 2-dimensional layout; a common example of a table would be an invoice  # noqa: E501
+
+        :return: The table_definitions of this FormDefinitionTemplate.  # noqa: E501
+        :rtype: list[FormTableDefinition]
+        """
+        return self._table_definitions
+
+    @table_definitions.setter
+    def table_definitions(self, table_definitions):
+        """Sets the table_definitions of this FormDefinitionTemplate.
+
+        Table definitions in the template; a table is comprised of columns and rows and exists in a 2-dimensional layout; a common example of a table would be an invoice  # noqa: E501
+
+        :param table_definitions: The table_definitions of this FormDefinitionTemplate.  # noqa: E501
+        :type: list[FormTableDefinition]
+        """
+
+        self._table_definitions = table_definitions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

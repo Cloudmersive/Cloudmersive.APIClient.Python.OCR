@@ -17,6 +17,7 @@ import re  # noqa: F401
 import six
 
 from cloudmersive_ocr_api_client.models.field_result import FieldResult  # noqa: F401,E501
+from cloudmersive_ocr_api_client.models.table_result import TableResult  # noqa: F401,E501
 
 
 class FormRecognitionResult(object):
@@ -34,25 +35,30 @@ class FormRecognitionResult(object):
     """
     swagger_types = {
         'successful': 'bool',
-        'field_value_extraction_result': 'list[FieldResult]'
+        'field_value_extraction_result': 'list[FieldResult]',
+        'table_value_extraction_results': 'list[TableResult]'
     }
 
     attribute_map = {
         'successful': 'Successful',
-        'field_value_extraction_result': 'FieldValueExtractionResult'
+        'field_value_extraction_result': 'FieldValueExtractionResult',
+        'table_value_extraction_results': 'TableValueExtractionResults'
     }
 
-    def __init__(self, successful=None, field_value_extraction_result=None):  # noqa: E501
+    def __init__(self, successful=None, field_value_extraction_result=None, table_value_extraction_results=None):  # noqa: E501
         """FormRecognitionResult - a model defined in Swagger"""  # noqa: E501
 
         self._successful = None
         self._field_value_extraction_result = None
+        self._table_value_extraction_results = None
         self.discriminator = None
 
         if successful is not None:
             self.successful = successful
         if field_value_extraction_result is not None:
             self.field_value_extraction_result = field_value_extraction_result
+        if table_value_extraction_results is not None:
+            self.table_value_extraction_results = table_value_extraction_results
 
     @property
     def successful(self):
@@ -99,6 +105,29 @@ class FormRecognitionResult(object):
         """
 
         self._field_value_extraction_result = field_value_extraction_result
+
+    @property
+    def table_value_extraction_results(self):
+        """Gets the table_value_extraction_results of this FormRecognitionResult.  # noqa: E501
+
+        Result of form table OCR data extraction  # noqa: E501
+
+        :return: The table_value_extraction_results of this FormRecognitionResult.  # noqa: E501
+        :rtype: list[TableResult]
+        """
+        return self._table_value_extraction_results
+
+    @table_value_extraction_results.setter
+    def table_value_extraction_results(self, table_value_extraction_results):
+        """Sets the table_value_extraction_results of this FormRecognitionResult.
+
+        Result of form table OCR data extraction  # noqa: E501
+
+        :param table_value_extraction_results: The table_value_extraction_results of this FormRecognitionResult.  # noqa: E501
+        :type: list[TableResult]
+        """
+
+        self._table_value_extraction_results = table_value_extraction_results
 
     def to_dict(self):
         """Returns the model properties as a dict"""

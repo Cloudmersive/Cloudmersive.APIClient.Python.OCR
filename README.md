@@ -4,7 +4,7 @@ The powerful Optical Character Recognition (OCR) APIs let you convert scanned im
 This Python package provides a native API client for [Cloudmersive OCR](https://www.cloudmersive.com/ocr-api)
 
 - API version: v1
-- Package version: 2.1.1
+- Package version: 2.1.2
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -93,6 +93,7 @@ Class | Method | HTTP request | Description
 *PreprocessingApi* | [**preprocessing_binarize_advanced**](docs/PreprocessingApi.md#preprocessing_binarize_advanced) | **POST** /ocr/preprocessing/image/binarize/advanced | Convert an image of text into a binary (light and dark) view with ML
 *PreprocessingApi* | [**preprocessing_get_page_angle**](docs/PreprocessingApi.md#preprocessing_get_page_angle) | **POST** /ocr/preprocessing/image/get-page-angle | Get the angle of the page / document / receipt
 *PreprocessingApi* | [**preprocessing_unrotate**](docs/PreprocessingApi.md#preprocessing_unrotate) | **POST** /ocr/preprocessing/image/unrotate | Detect and unrotate a document image
+*PreprocessingApi* | [**preprocessing_unrotate_advanced**](docs/PreprocessingApi.md#preprocessing_unrotate_advanced) | **POST** /ocr/preprocessing/image/unrotate/advanced | Detect and unrotate a document image (advanced)
 *PreprocessingApi* | [**preprocessing_unskew**](docs/PreprocessingApi.md#preprocessing_unskew) | **POST** /ocr/preprocessing/image/unskew | Detect and unskew a photo of a document
 *ReceiptsApi* | [**receipts_photo_to_csv**](docs/ReceiptsApi.md#receipts_photo_to_csv) | **POST** /ocr/receipts/photo/to/csv | Convert a photo of a receipt into a CSV file containing structured information from the receipt
 
@@ -104,6 +105,8 @@ Class | Method | HTTP request | Description
  - [FormDefinitionTemplate](docs/FormDefinitionTemplate.md)
  - [FormFieldDefinition](docs/FormFieldDefinition.md)
  - [FormRecognitionResult](docs/FormRecognitionResult.md)
+ - [FormTableColumnDefinition](docs/FormTableColumnDefinition.md)
+ - [FormTableDefinition](docs/FormTableDefinition.md)
  - [GetPageAngleResult](docs/GetPageAngleResult.md)
  - [ImageToLinesWithLocationResult](docs/ImageToLinesWithLocationResult.md)
  - [ImageToTextResponse](docs/ImageToTextResponse.md)
@@ -118,8 +121,12 @@ Class | Method | HTTP request | Description
  - [PdfToTextResponse](docs/PdfToTextResponse.md)
  - [PdfToWordsWithLocationResult](docs/PdfToWordsWithLocationResult.md)
  - [PhotoToWordsWithLocationResult](docs/PhotoToWordsWithLocationResult.md)
+ - [Point](docs/Point.md)
  - [ReceiptLineItem](docs/ReceiptLineItem.md)
  - [ReceiptRecognitionResult](docs/ReceiptRecognitionResult.md)
+ - [TableCellResult](docs/TableCellResult.md)
+ - [TableResult](docs/TableResult.md)
+ - [TableRowResult](docs/TableRowResult.md)
 
 
 ## Documentation For Authorization

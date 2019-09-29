@@ -33,52 +33,31 @@ class OcrPageResultWithLinesWithLocation(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'successful': 'bool',
         'page_number': 'int',
+        'successful': 'bool',
         'lines': 'list[OcrLineElement]'
     }
 
     attribute_map = {
-        'successful': 'Successful',
         'page_number': 'PageNumber',
+        'successful': 'Successful',
         'lines': 'Lines'
     }
 
-    def __init__(self, successful=None, page_number=None, lines=None):  # noqa: E501
+    def __init__(self, page_number=None, successful=None, lines=None):  # noqa: E501
         """OcrPageResultWithLinesWithLocation - a model defined in Swagger"""  # noqa: E501
 
-        self._successful = None
         self._page_number = None
+        self._successful = None
         self._lines = None
         self.discriminator = None
 
-        if successful is not None:
-            self.successful = successful
         if page_number is not None:
             self.page_number = page_number
+        if successful is not None:
+            self.successful = successful
         if lines is not None:
             self.lines = lines
-
-    @property
-    def successful(self):
-        """Gets the successful of this OcrPageResultWithLinesWithLocation.  # noqa: E501
-
-
-        :return: The successful of this OcrPageResultWithLinesWithLocation.  # noqa: E501
-        :rtype: bool
-        """
-        return self._successful
-
-    @successful.setter
-    def successful(self, successful):
-        """Sets the successful of this OcrPageResultWithLinesWithLocation.
-
-
-        :param successful: The successful of this OcrPageResultWithLinesWithLocation.  # noqa: E501
-        :type: bool
-        """
-
-        self._successful = successful
 
     @property
     def page_number(self):
@@ -102,6 +81,29 @@ class OcrPageResultWithLinesWithLocation(object):
         """
 
         self._page_number = page_number
+
+    @property
+    def successful(self):
+        """Gets the successful of this OcrPageResultWithLinesWithLocation.  # noqa: E501
+
+        True if successful, false otherwise  # noqa: E501
+
+        :return: The successful of this OcrPageResultWithLinesWithLocation.  # noqa: E501
+        :rtype: bool
+        """
+        return self._successful
+
+    @successful.setter
+    def successful(self, successful):
+        """Sets the successful of this OcrPageResultWithLinesWithLocation.
+
+        True if successful, false otherwise  # noqa: E501
+
+        :param successful: The successful of this OcrPageResultWithLinesWithLocation.  # noqa: E501
+        :type: bool
+        """
+
+        self._successful = successful
 
     @property
     def lines(self):

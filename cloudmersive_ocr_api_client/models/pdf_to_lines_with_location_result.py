@@ -58,6 +58,7 @@ class PdfToLinesWithLocationResult(object):
     def successful(self):
         """Gets the successful of this PdfToLinesWithLocationResult.  # noqa: E501
 
+        True if successful, false otherwise  # noqa: E501
 
         :return: The successful of this PdfToLinesWithLocationResult.  # noqa: E501
         :rtype: bool
@@ -68,6 +69,7 @@ class PdfToLinesWithLocationResult(object):
     def successful(self, successful):
         """Sets the successful of this PdfToLinesWithLocationResult.
 
+        True if successful, false otherwise  # noqa: E501
 
         :param successful: The successful of this PdfToLinesWithLocationResult.  # noqa: E501
         :type: bool
@@ -79,6 +81,7 @@ class PdfToLinesWithLocationResult(object):
     def ocr_pages(self):
         """Gets the ocr_pages of this PdfToLinesWithLocationResult.  # noqa: E501
 
+        OCR results for each page  # noqa: E501
 
         :return: The ocr_pages of this PdfToLinesWithLocationResult.  # noqa: E501
         :rtype: list[OcrPageResultWithLinesWithLocation]
@@ -89,6 +92,7 @@ class PdfToLinesWithLocationResult(object):
     def ocr_pages(self, ocr_pages):
         """Sets the ocr_pages of this PdfToLinesWithLocationResult.
 
+        OCR results for each page  # noqa: E501
 
         :param ocr_pages: The ocr_pages of this PdfToLinesWithLocationResult.  # noqa: E501
         :type: list[OcrPageResultWithLinesWithLocation]

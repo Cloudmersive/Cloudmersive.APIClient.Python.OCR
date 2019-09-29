@@ -1,10 +1,10 @@
-# PdfToWordsWithLocationResult
+# TableCellResult
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**successful** | **bool** | True if successful, false otherwise | [optional] 
-**ocr_pages** | [**list[OcrPageResultWithWordsWithLocation]**](OcrPageResultWithWordsWithLocation.md) | OCR page results | [optional] 
+**column_id** | **str** | The ID of the column | [optional] 
+**cell_values** | [**list[OcrPhotoTextElement]**](OcrPhotoTextElement.md) | Result cell value(s) extracted | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
