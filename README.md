@@ -4,7 +4,7 @@ The powerful Optical Character Recognition (OCR) APIs let you convert scanned im
 This Python package provides a native API client for [Cloudmersive OCR](https://www.cloudmersive.com/ocr-api)
 
 - API version: v1
-- Package version: 2.1.3
+- Package version: 2.1.4
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -82,6 +82,7 @@ Class | Method | HTTP request | Description
 *ImageOcrApi* | [**image_ocr_image_words_with_location**](docs/ImageOcrApi.md#image_ocr_image_words_with_location) | **POST** /ocr/image/to/words-with-location | Convert a scanned image into words with location
 *ImageOcrApi* | [**image_ocr_photo_recognize_business_card**](docs/ImageOcrApi.md#image_ocr_photo_recognize_business_card) | **POST** /ocr/photo/recognize/business-card | Recognize a photo of a business card, extract key business information
 *ImageOcrApi* | [**image_ocr_photo_recognize_form**](docs/ImageOcrApi.md#image_ocr_photo_recognize_form) | **POST** /ocr/photo/recognize/form | Recognize a photo of a form, extract key fields and business information
+*ImageOcrApi* | [**image_ocr_photo_recognize_form_advanced**](docs/ImageOcrApi.md#image_ocr_photo_recognize_form_advanced) | **POST** /ocr/photo/recognize/form/advanced | Recognize a photo of a form, extract key fields using stored templates
 *ImageOcrApi* | [**image_ocr_photo_recognize_receipt**](docs/ImageOcrApi.md#image_ocr_photo_recognize_receipt) | **POST** /ocr/photo/recognize/receipt | Recognize a photo of a receipt, extract key business information
 *ImageOcrApi* | [**image_ocr_photo_to_text**](docs/ImageOcrApi.md#image_ocr_photo_to_text) | **POST** /ocr/photo/toText | Convert a photo of a document into text
 *ImageOcrApi* | [**image_ocr_photo_words_with_location**](docs/ImageOcrApi.md#image_ocr_photo_words_with_location) | **POST** /ocr/photo/to/words-with-location | Convert a photo of a document or receipt into words with location
