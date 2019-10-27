@@ -40,6 +40,7 @@ class ReceiptRecognitionResult(object):
         'address_string': 'str',
         'phone_number': 'str',
         'receipt_items': 'list[ReceiptLineItem]',
+        'receipt_sub_total': 'float',
         'receipt_total': 'float'
     }
 
@@ -51,10 +52,11 @@ class ReceiptRecognitionResult(object):
         'address_string': 'AddressString',
         'phone_number': 'PhoneNumber',
         'receipt_items': 'ReceiptItems',
+        'receipt_sub_total': 'ReceiptSubTotal',
         'receipt_total': 'ReceiptTotal'
     }
 
-    def __init__(self, successful=None, timestamp=None, business_name=None, business_website=None, address_string=None, phone_number=None, receipt_items=None, receipt_total=None):  # noqa: E501
+    def __init__(self, successful=None, timestamp=None, business_name=None, business_website=None, address_string=None, phone_number=None, receipt_items=None, receipt_sub_total=None, receipt_total=None):  # noqa: E501
         """ReceiptRecognitionResult - a model defined in Swagger"""  # noqa: E501
 
         self._successful = None
@@ -64,6 +66,7 @@ class ReceiptRecognitionResult(object):
         self._address_string = None
         self._phone_number = None
         self._receipt_items = None
+        self._receipt_sub_total = None
         self._receipt_total = None
         self.discriminator = None
 
@@ -81,6 +84,8 @@ class ReceiptRecognitionResult(object):
             self.phone_number = phone_number
         if receipt_items is not None:
             self.receipt_items = receipt_items
+        if receipt_sub_total is not None:
+            self.receipt_sub_total = receipt_sub_total
         if receipt_total is not None:
             self.receipt_total = receipt_total
 
@@ -244,6 +249,29 @@ class ReceiptRecognitionResult(object):
         """
 
         self._receipt_items = receipt_items
+
+    @property
+    def receipt_sub_total(self):
+        """Gets the receipt_sub_total of this ReceiptRecognitionResult.  # noqa: E501
+
+        Optional; if available, the monetary value of the receipt subtotal - typically not including specialized line items such as Tax. If this value is not available, it will be 0.  # noqa: E501
+
+        :return: The receipt_sub_total of this ReceiptRecognitionResult.  # noqa: E501
+        :rtype: float
+        """
+        return self._receipt_sub_total
+
+    @receipt_sub_total.setter
+    def receipt_sub_total(self, receipt_sub_total):
+        """Sets the receipt_sub_total of this ReceiptRecognitionResult.
+
+        Optional; if available, the monetary value of the receipt subtotal - typically not including specialized line items such as Tax. If this value is not available, it will be 0.  # noqa: E501
+
+        :param receipt_sub_total: The receipt_sub_total of this ReceiptRecognitionResult.  # noqa: E501
+        :type: float
+        """
+
+        self._receipt_sub_total = receipt_sub_total
 
     @property
     def receipt_total(self):

@@ -4,7 +4,7 @@ The powerful Optical Character Recognition (OCR) APIs let you convert scanned im
 This Python package provides a native API client for [Cloudmersive OCR](https://www.cloudmersive.com/ocr-api)
 
 - API version: v1
-- Package version: 2.1.4
+- Package version: 2.1.5
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
