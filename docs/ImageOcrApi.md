@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **image_ocr_photo_recognize_form**
-> FormRecognitionResult image_ocr_photo_recognize_form(image_file, form_template_definition=form_template_definition, recognition_mode=recognition_mode, preprocessing=preprocessing, language=language)
+> FormRecognitionResult image_ocr_photo_recognize_form(image_file, form_template_definition=form_template_definition, recognition_mode=recognition_mode, preprocessing=preprocessing, diagnostics=diagnostics, language=language)
 
 Recognize a photo of a form, extract key fields and business information
 
@@ -212,11 +212,12 @@ image_file = '/path/to/file.txt' # file | Image file to perform OCR on.  Common 
 form_template_definition = NULL # object | Form field definitions (optional)
 recognition_mode = 'recognition_mode_example' # str | Optional, enable advanced recognition mode by specifying 'Advanced', enable handwriting recognition by specifying 'EnableHandwriting'.  Default is disabled. (optional)
 preprocessing = 'preprocessing_example' # str | Optional, preprocessing mode, default is 'Auto'.  Possible values are None (no preprocessing of the image), and Auto (automatic image enhancement of the image - including automatic unrotation of the image - before OCR is applied; this is recommended).  Set this to 'None' if you do not want to use automatic image unrotation and enhancement. (optional)
+diagnostics = 'diagnostics_example' # str | Optional, diagnostics mode, default is 'false'.  Possible values are 'true' (will set DiagnosticImage to a diagnostic PNG image in the result), and 'false' (no diagnostics are enabled; this is recommended for best performance). (optional)
 language = 'language_example' # str | Optional, language of the input document, default is English (ENG).  Possible values are ENG (English), ARA (Arabic), ZHO (Chinese - Simplified), ZHO-HANT (Chinese - Traditional), ASM (Assamese), AFR (Afrikaans), AMH (Amharic), AZE (Azerbaijani), AZE-CYRL (Azerbaijani - Cyrillic), BEL (Belarusian), BEN (Bengali), BOD (Tibetan), BOS (Bosnian), BUL (Bulgarian), CAT (Catalan; Valencian), CEB (Cebuano), CES (Czech), CHR (Cherokee), CYM (Welsh), DAN (Danish), DEU (German), DZO (Dzongkha), ELL (Greek), ENM (Archaic/Middle English), EPO (Esperanto), EST (Estonian), EUS (Basque), FAS (Persian), FIN (Finnish), FRA (French), FRK (Frankish), FRM (Middle-French), GLE (Irish), GLG (Galician), GRC (Ancient Greek), HAT (Hatian), HEB (Hebrew), HIN (Hindi), HRV (Croatian), HUN (Hungarian), IKU (Inuktitut), IND (Indonesian), ISL (Icelandic), ITA (Italian), ITA-OLD (Old - Italian), JAV (Javanese), JPN (Japanese), KAN (Kannada), KAT (Georgian), KAT-OLD (Old-Georgian), KAZ (Kazakh), KHM (Central Khmer), KIR (Kirghiz), KOR (Korean), KUR (Kurdish), LAO (Lao), LAT (Latin), LAV (Latvian), LIT (Lithuanian), MAL (Malayalam), MAR (Marathi), MKD (Macedonian), MLT (Maltese), MSA (Malay), MYA (Burmese), NEP (Nepali), NLD (Dutch), NOR (Norwegian), ORI (Oriya), PAN (Panjabi), POL (Polish), POR (Portuguese), PUS (Pushto), RON (Romanian), RUS (Russian), SAN (Sanskrit), SIN (Sinhala), SLK (Slovak), SLV (Slovenian), SPA (Spanish), SPA-OLD (Old Spanish), SQI (Albanian), SRP (Serbian), SRP-LAT (Latin Serbian), SWA (Swahili), SWE (Swedish), SYR (Syriac), TAM (Tamil), TEL (Telugu), TGK (Tajik), TGL (Tagalog), THA (Thai), TIR (Tigrinya), TUR (Turkish), UIG (Uighur), UKR (Ukrainian), URD (Urdu), UZB (Uzbek), UZB-CYR (Cyrillic Uzbek), VIE (Vietnamese), YID (Yiddish) (optional)
 
 try:
     # Recognize a photo of a form, extract key fields and business information
-    api_response = api_instance.image_ocr_photo_recognize_form(image_file, form_template_definition=form_template_definition, recognition_mode=recognition_mode, preprocessing=preprocessing, language=language)
+    api_response = api_instance.image_ocr_photo_recognize_form(image_file, form_template_definition=form_template_definition, recognition_mode=recognition_mode, preprocessing=preprocessing, diagnostics=diagnostics, language=language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ImageOcrApi->image_ocr_photo_recognize_form: %s\n" % e)
@@ -230,6 +231,7 @@ Name | Type | Description  | Notes
  **form_template_definition** | [**object**](.md)| Form field definitions | [optional] 
  **recognition_mode** | **str**| Optional, enable advanced recognition mode by specifying &#39;Advanced&#39;, enable handwriting recognition by specifying &#39;EnableHandwriting&#39;.  Default is disabled. | [optional] 
  **preprocessing** | **str**| Optional, preprocessing mode, default is &#39;Auto&#39;.  Possible values are None (no preprocessing of the image), and Auto (automatic image enhancement of the image - including automatic unrotation of the image - before OCR is applied; this is recommended).  Set this to &#39;None&#39; if you do not want to use automatic image unrotation and enhancement. | [optional] 
+ **diagnostics** | **str**| Optional, diagnostics mode, default is &#39;false&#39;.  Possible values are &#39;true&#39; (will set DiagnosticImage to a diagnostic PNG image in the result), and &#39;false&#39; (no diagnostics are enabled; this is recommended for best performance). | [optional] 
  **language** | **str**| Optional, language of the input document, default is English (ENG).  Possible values are ENG (English), ARA (Arabic), ZHO (Chinese - Simplified), ZHO-HANT (Chinese - Traditional), ASM (Assamese), AFR (Afrikaans), AMH (Amharic), AZE (Azerbaijani), AZE-CYRL (Azerbaijani - Cyrillic), BEL (Belarusian), BEN (Bengali), BOD (Tibetan), BOS (Bosnian), BUL (Bulgarian), CAT (Catalan; Valencian), CEB (Cebuano), CES (Czech), CHR (Cherokee), CYM (Welsh), DAN (Danish), DEU (German), DZO (Dzongkha), ELL (Greek), ENM (Archaic/Middle English), EPO (Esperanto), EST (Estonian), EUS (Basque), FAS (Persian), FIN (Finnish), FRA (French), FRK (Frankish), FRM (Middle-French), GLE (Irish), GLG (Galician), GRC (Ancient Greek), HAT (Hatian), HEB (Hebrew), HIN (Hindi), HRV (Croatian), HUN (Hungarian), IKU (Inuktitut), IND (Indonesian), ISL (Icelandic), ITA (Italian), ITA-OLD (Old - Italian), JAV (Javanese), JPN (Japanese), KAN (Kannada), KAT (Georgian), KAT-OLD (Old-Georgian), KAZ (Kazakh), KHM (Central Khmer), KIR (Kirghiz), KOR (Korean), KUR (Kurdish), LAO (Lao), LAT (Latin), LAV (Latvian), LIT (Lithuanian), MAL (Malayalam), MAR (Marathi), MKD (Macedonian), MLT (Maltese), MSA (Malay), MYA (Burmese), NEP (Nepali), NLD (Dutch), NOR (Norwegian), ORI (Oriya), PAN (Panjabi), POL (Polish), POR (Portuguese), PUS (Pushto), RON (Romanian), RUS (Russian), SAN (Sanskrit), SIN (Sinhala), SLK (Slovak), SLV (Slovenian), SPA (Spanish), SPA-OLD (Old Spanish), SQI (Albanian), SRP (Serbian), SRP-LAT (Latin Serbian), SWA (Swahili), SWE (Swedish), SYR (Syriac), TAM (Tamil), TEL (Telugu), TGK (Tajik), TGL (Tagalog), THA (Thai), TIR (Tigrinya), TUR (Turkish), UIG (Uighur), UKR (Ukrainian), URD (Urdu), UZB (Uzbek), UZB-CYR (Cyrillic Uzbek), VIE (Vietnamese), YID (Yiddish) | [optional] 
 
 ### Return type
@@ -248,7 +250,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **image_ocr_photo_recognize_form_advanced**
-> FormRecognitionResult image_ocr_photo_recognize_form_advanced(image_file, bucket_id=bucket_id, bucket_secret_key=bucket_secret_key, recognition_mode=recognition_mode, preprocessing=preprocessing)
+> FormRecognitionResult image_ocr_photo_recognize_form_advanced(image_file, bucket_id=bucket_id, bucket_secret_key=bucket_secret_key, recognition_mode=recognition_mode, preprocessing=preprocessing, diagnostics=diagnostics)
 
 Recognize a photo of a form, extract key fields using stored templates
 
@@ -275,10 +277,11 @@ bucket_id = 'bucket_id_example' # str | Bucket ID of the Configuration Bucket st
 bucket_secret_key = 'bucket_secret_key_example' # str | Bucket Secret Key of the Configuration Bucket storing the form templates (optional)
 recognition_mode = 'recognition_mode_example' # str | Optional, enable advanced recognition mode by specifying 'Advanced', enable handwriting recognition by specifying 'EnableHandwriting'.  Default is disabled. (optional)
 preprocessing = 'preprocessing_example' # str | Optional, preprocessing mode, default is 'Auto'.  Possible values are None (no preprocessing of the image), and Auto (automatic image enhancement of the image - including automatic unrotation of the image - before OCR is applied; this is recommended).  Set this to 'None' if you do not want to use automatic image unrotation and enhancement. (optional)
+diagnostics = 'diagnostics_example' # str | Optional, diagnostics mode, default is 'false'.  Possible values are 'true' (will set DiagnosticImage to a diagnostic PNG image in the result), and 'false' (no diagnostics are enabled; this is recommended for best performance). (optional)
 
 try:
     # Recognize a photo of a form, extract key fields using stored templates
-    api_response = api_instance.image_ocr_photo_recognize_form_advanced(image_file, bucket_id=bucket_id, bucket_secret_key=bucket_secret_key, recognition_mode=recognition_mode, preprocessing=preprocessing)
+    api_response = api_instance.image_ocr_photo_recognize_form_advanced(image_file, bucket_id=bucket_id, bucket_secret_key=bucket_secret_key, recognition_mode=recognition_mode, preprocessing=preprocessing, diagnostics=diagnostics)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ImageOcrApi->image_ocr_photo_recognize_form_advanced: %s\n" % e)
@@ -293,6 +296,7 @@ Name | Type | Description  | Notes
  **bucket_secret_key** | **str**| Bucket Secret Key of the Configuration Bucket storing the form templates | [optional] 
  **recognition_mode** | **str**| Optional, enable advanced recognition mode by specifying &#39;Advanced&#39;, enable handwriting recognition by specifying &#39;EnableHandwriting&#39;.  Default is disabled. | [optional] 
  **preprocessing** | **str**| Optional, preprocessing mode, default is &#39;Auto&#39;.  Possible values are None (no preprocessing of the image), and Auto (automatic image enhancement of the image - including automatic unrotation of the image - before OCR is applied; this is recommended).  Set this to &#39;None&#39; if you do not want to use automatic image unrotation and enhancement. | [optional] 
+ **diagnostics** | **str**| Optional, diagnostics mode, default is &#39;false&#39;.  Possible values are &#39;true&#39; (will set DiagnosticImage to a diagnostic PNG image in the result), and &#39;false&#39; (no diagnostics are enabled; this is recommended for best performance). | [optional] 
 
 ### Return type
 

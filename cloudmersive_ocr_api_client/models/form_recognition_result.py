@@ -36,21 +36,24 @@ class FormRecognitionResult(object):
     swagger_types = {
         'successful': 'bool',
         'field_value_extraction_result': 'list[FieldResult]',
-        'table_value_extraction_results': 'list[TableResult]'
+        'table_value_extraction_results': 'list[TableResult]',
+        'diagnostics': 'list[str]'
     }
 
     attribute_map = {
         'successful': 'Successful',
         'field_value_extraction_result': 'FieldValueExtractionResult',
-        'table_value_extraction_results': 'TableValueExtractionResults'
+        'table_value_extraction_results': 'TableValueExtractionResults',
+        'diagnostics': 'Diagnostics'
     }
 
-    def __init__(self, successful=None, field_value_extraction_result=None, table_value_extraction_results=None):  # noqa: E501
+    def __init__(self, successful=None, field_value_extraction_result=None, table_value_extraction_results=None, diagnostics=None):  # noqa: E501
         """FormRecognitionResult - a model defined in Swagger"""  # noqa: E501
 
         self._successful = None
         self._field_value_extraction_result = None
         self._table_value_extraction_results = None
+        self._diagnostics = None
         self.discriminator = None
 
         if successful is not None:
@@ -59,6 +62,8 @@ class FormRecognitionResult(object):
             self.field_value_extraction_result = field_value_extraction_result
         if table_value_extraction_results is not None:
             self.table_value_extraction_results = table_value_extraction_results
+        if diagnostics is not None:
+            self.diagnostics = diagnostics
 
     @property
     def successful(self):
@@ -128,6 +133,29 @@ class FormRecognitionResult(object):
         """
 
         self._table_value_extraction_results = table_value_extraction_results
+
+    @property
+    def diagnostics(self):
+        """Gets the diagnostics of this FormRecognitionResult.  # noqa: E501
+
+        Diagnostic images - default is null, enable diagnostics=true to populate this parameter with one image per field  # noqa: E501
+
+        :return: The diagnostics of this FormRecognitionResult.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._diagnostics
+
+    @diagnostics.setter
+    def diagnostics(self, diagnostics):
+        """Sets the diagnostics of this FormRecognitionResult.
+
+        Diagnostic images - default is null, enable diagnostics=true to populate this parameter with one image per field  # noqa: E501
+
+        :param diagnostics: The diagnostics of this FormRecognitionResult.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._diagnostics = diagnostics
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -43,6 +43,8 @@ class FormFieldDefinition(object):
         'horizontal_alignment_type': 'str',
         'target_field_width_relative': 'float',
         'target_field_height_relative': 'float',
+        'target_field_horizontal_adjustment': 'float',
+        'target_field_vertical_adjustment': 'float',
         'ignore': 'list[str]'
     }
 
@@ -59,10 +61,12 @@ class FormFieldDefinition(object):
         'horizontal_alignment_type': 'HorizontalAlignmentType',
         'target_field_width_relative': 'TargetFieldWidth_Relative',
         'target_field_height_relative': 'TargetFieldHeight_Relative',
+        'target_field_horizontal_adjustment': 'TargetFieldHorizontalAdjustment',
+        'target_field_vertical_adjustment': 'TargetFieldVerticalAdjustment',
         'ignore': 'Ignore'
     }
 
-    def __init__(self, field_id=None, left_anchor=None, top_anchor=None, anchor_mode=None, data_type=None, target_digit_count=None, minimum_character_count=None, allow_numeric_digits=None, vertical_alignment_type=None, horizontal_alignment_type=None, target_field_width_relative=None, target_field_height_relative=None, ignore=None):  # noqa: E501
+    def __init__(self, field_id=None, left_anchor=None, top_anchor=None, anchor_mode=None, data_type=None, target_digit_count=None, minimum_character_count=None, allow_numeric_digits=None, vertical_alignment_type=None, horizontal_alignment_type=None, target_field_width_relative=None, target_field_height_relative=None, target_field_horizontal_adjustment=None, target_field_vertical_adjustment=None, ignore=None):  # noqa: E501
         """FormFieldDefinition - a model defined in Swagger"""  # noqa: E501
 
         self._field_id = None
@@ -77,6 +81,8 @@ class FormFieldDefinition(object):
         self._horizontal_alignment_type = None
         self._target_field_width_relative = None
         self._target_field_height_relative = None
+        self._target_field_horizontal_adjustment = None
+        self._target_field_vertical_adjustment = None
         self._ignore = None
         self.discriminator = None
 
@@ -104,6 +110,10 @@ class FormFieldDefinition(object):
             self.target_field_width_relative = target_field_width_relative
         if target_field_height_relative is not None:
             self.target_field_height_relative = target_field_height_relative
+        if target_field_horizontal_adjustment is not None:
+            self.target_field_horizontal_adjustment = target_field_horizontal_adjustment
+        if target_field_vertical_adjustment is not None:
+            self.target_field_vertical_adjustment = target_field_vertical_adjustment
         if ignore is not None:
             self.ignore = ignore
 
@@ -180,7 +190,7 @@ class FormFieldDefinition(object):
     def anchor_mode(self):
         """Gets the anchor_mode of this FormFieldDefinition.  # noqa: E501
 
-        Optional - the matching mode for the anchor.  Possible values are Complete (requires the entire anchor to match) and Partial (allows only part of the anchor to match).  Default is Partial.  # noqa: E501
+        Optional - the matching mode for the anchor.  Possible values are Complete (requires the entire anchor to match) and Partial (allows only part of the anchor to match) and Horizontal (anchor must be laid out horizontally).  Default is Partial.  # noqa: E501
 
         :return: The anchor_mode of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -191,7 +201,7 @@ class FormFieldDefinition(object):
     def anchor_mode(self, anchor_mode):
         """Sets the anchor_mode of this FormFieldDefinition.
 
-        Optional - the matching mode for the anchor.  Possible values are Complete (requires the entire anchor to match) and Partial (allows only part of the anchor to match).  Default is Partial.  # noqa: E501
+        Optional - the matching mode for the anchor.  Possible values are Complete (requires the entire anchor to match) and Partial (allows only part of the anchor to match) and Horizontal (anchor must be laid out horizontally).  Default is Partial.  # noqa: E501
 
         :param anchor_mode: The anchor_mode of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -382,6 +392,52 @@ class FormFieldDefinition(object):
         """
 
         self._target_field_height_relative = target_field_height_relative
+
+    @property
+    def target_field_horizontal_adjustment(self):
+        """Gets the target_field_horizontal_adjustment of this FormFieldDefinition.  # noqa: E501
+
+        Optional - horizontal adjestment in relative width of the field  # noqa: E501
+
+        :return: The target_field_horizontal_adjustment of this FormFieldDefinition.  # noqa: E501
+        :rtype: float
+        """
+        return self._target_field_horizontal_adjustment
+
+    @target_field_horizontal_adjustment.setter
+    def target_field_horizontal_adjustment(self, target_field_horizontal_adjustment):
+        """Sets the target_field_horizontal_adjustment of this FormFieldDefinition.
+
+        Optional - horizontal adjestment in relative width of the field  # noqa: E501
+
+        :param target_field_horizontal_adjustment: The target_field_horizontal_adjustment of this FormFieldDefinition.  # noqa: E501
+        :type: float
+        """
+
+        self._target_field_horizontal_adjustment = target_field_horizontal_adjustment
+
+    @property
+    def target_field_vertical_adjustment(self):
+        """Gets the target_field_vertical_adjustment of this FormFieldDefinition.  # noqa: E501
+
+        Optional - vertical adjestment in relative height of the field  # noqa: E501
+
+        :return: The target_field_vertical_adjustment of this FormFieldDefinition.  # noqa: E501
+        :rtype: float
+        """
+        return self._target_field_vertical_adjustment
+
+    @target_field_vertical_adjustment.setter
+    def target_field_vertical_adjustment(self, target_field_vertical_adjustment):
+        """Sets the target_field_vertical_adjustment of this FormFieldDefinition.
+
+        Optional - vertical adjestment in relative height of the field  # noqa: E501
+
+        :param target_field_vertical_adjustment: The target_field_vertical_adjustment of this FormFieldDefinition.  # noqa: E501
+        :type: float
+        """
+
+        self._target_field_vertical_adjustment = target_field_vertical_adjustment
 
     @property
     def ignore(self):
