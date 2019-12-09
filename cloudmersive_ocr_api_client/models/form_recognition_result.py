@@ -37,23 +37,26 @@ class FormRecognitionResult(object):
         'successful': 'bool',
         'field_value_extraction_result': 'list[FieldResult]',
         'table_value_extraction_results': 'list[TableResult]',
-        'diagnostics': 'list[str]'
+        'diagnostics': 'list[str]',
+        'best_match_form_setting_name': 'str'
     }
 
     attribute_map = {
         'successful': 'Successful',
         'field_value_extraction_result': 'FieldValueExtractionResult',
         'table_value_extraction_results': 'TableValueExtractionResults',
-        'diagnostics': 'Diagnostics'
+        'diagnostics': 'Diagnostics',
+        'best_match_form_setting_name': 'BestMatchFormSettingName'
     }
 
-    def __init__(self, successful=None, field_value_extraction_result=None, table_value_extraction_results=None, diagnostics=None):  # noqa: E501
+    def __init__(self, successful=None, field_value_extraction_result=None, table_value_extraction_results=None, diagnostics=None, best_match_form_setting_name=None):  # noqa: E501
         """FormRecognitionResult - a model defined in Swagger"""  # noqa: E501
 
         self._successful = None
         self._field_value_extraction_result = None
         self._table_value_extraction_results = None
         self._diagnostics = None
+        self._best_match_form_setting_name = None
         self.discriminator = None
 
         if successful is not None:
@@ -64,6 +67,8 @@ class FormRecognitionResult(object):
             self.table_value_extraction_results = table_value_extraction_results
         if diagnostics is not None:
             self.diagnostics = diagnostics
+        if best_match_form_setting_name is not None:
+            self.best_match_form_setting_name = best_match_form_setting_name
 
     @property
     def successful(self):
@@ -156,6 +161,29 @@ class FormRecognitionResult(object):
         """
 
         self._diagnostics = diagnostics
+
+    @property
+    def best_match_form_setting_name(self):
+        """Gets the best_match_form_setting_name of this FormRecognitionResult.  # noqa: E501
+
+        Optional; populated when using photo/recognize/form/advanced with the Setting Name of the best-matching highest-relevance form  # noqa: E501
+
+        :return: The best_match_form_setting_name of this FormRecognitionResult.  # noqa: E501
+        :rtype: str
+        """
+        return self._best_match_form_setting_name
+
+    @best_match_form_setting_name.setter
+    def best_match_form_setting_name(self, best_match_form_setting_name):
+        """Sets the best_match_form_setting_name of this FormRecognitionResult.
+
+        Optional; populated when using photo/recognize/form/advanced with the Setting Name of the best-matching highest-relevance form  # noqa: E501
+
+        :param best_match_form_setting_name: The best_match_form_setting_name of this FormRecognitionResult.  # noqa: E501
+        :type: str
+        """
+
+        self._best_match_form_setting_name = best_match_form_setting_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

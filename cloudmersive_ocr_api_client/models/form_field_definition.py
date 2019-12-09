@@ -34,6 +34,7 @@ class FormFieldDefinition(object):
         'field_id': 'str',
         'left_anchor': 'str',
         'top_anchor': 'str',
+        'bottom_anchor': 'str',
         'anchor_mode': 'str',
         'data_type': 'str',
         'target_digit_count': 'int',
@@ -52,6 +53,7 @@ class FormFieldDefinition(object):
         'field_id': 'FieldID',
         'left_anchor': 'LeftAnchor',
         'top_anchor': 'TopAnchor',
+        'bottom_anchor': 'BottomAnchor',
         'anchor_mode': 'AnchorMode',
         'data_type': 'DataType',
         'target_digit_count': 'TargetDigitCount',
@@ -66,12 +68,13 @@ class FormFieldDefinition(object):
         'ignore': 'Ignore'
     }
 
-    def __init__(self, field_id=None, left_anchor=None, top_anchor=None, anchor_mode=None, data_type=None, target_digit_count=None, minimum_character_count=None, allow_numeric_digits=None, vertical_alignment_type=None, horizontal_alignment_type=None, target_field_width_relative=None, target_field_height_relative=None, target_field_horizontal_adjustment=None, target_field_vertical_adjustment=None, ignore=None):  # noqa: E501
+    def __init__(self, field_id=None, left_anchor=None, top_anchor=None, bottom_anchor=None, anchor_mode=None, data_type=None, target_digit_count=None, minimum_character_count=None, allow_numeric_digits=None, vertical_alignment_type=None, horizontal_alignment_type=None, target_field_width_relative=None, target_field_height_relative=None, target_field_horizontal_adjustment=None, target_field_vertical_adjustment=None, ignore=None):  # noqa: E501
         """FormFieldDefinition - a model defined in Swagger"""  # noqa: E501
 
         self._field_id = None
         self._left_anchor = None
         self._top_anchor = None
+        self._bottom_anchor = None
         self._anchor_mode = None
         self._data_type = None
         self._target_digit_count = None
@@ -92,6 +95,8 @@ class FormFieldDefinition(object):
             self.left_anchor = left_anchor
         if top_anchor is not None:
             self.top_anchor = top_anchor
+        if bottom_anchor is not None:
+            self.bottom_anchor = bottom_anchor
         if anchor_mode is not None:
             self.anchor_mode = anchor_mode
         if data_type is not None:
@@ -121,7 +126,7 @@ class FormFieldDefinition(object):
     def field_id(self):
         """Gets the field_id of this FormFieldDefinition.  # noqa: E501
 
-        The identifier of the field; use this to identify which field is being referenced  # noqa: E501
+        The identifier of the field; use this to identify which field is being referenced.  Set to SkipField if you do not wish to return the value of this field in the result.  # noqa: E501
 
         :return: The field_id of this FormFieldDefinition.  # noqa: E501
         :rtype: str
@@ -132,7 +137,7 @@ class FormFieldDefinition(object):
     def field_id(self, field_id):
         """Sets the field_id of this FormFieldDefinition.
 
-        The identifier of the field; use this to identify which field is being referenced  # noqa: E501
+        The identifier of the field; use this to identify which field is being referenced.  Set to SkipField if you do not wish to return the value of this field in the result.  # noqa: E501
 
         :param field_id: The field_id of this FormFieldDefinition.  # noqa: E501
         :type: str
@@ -185,6 +190,29 @@ class FormFieldDefinition(object):
         """
 
         self._top_anchor = top_anchor
+
+    @property
+    def bottom_anchor(self):
+        """Gets the bottom_anchor of this FormFieldDefinition.  # noqa: E501
+
+        Optional - the bottom anchor of the field  # noqa: E501
+
+        :return: The bottom_anchor of this FormFieldDefinition.  # noqa: E501
+        :rtype: str
+        """
+        return self._bottom_anchor
+
+    @bottom_anchor.setter
+    def bottom_anchor(self, bottom_anchor):
+        """Sets the bottom_anchor of this FormFieldDefinition.
+
+        Optional - the bottom anchor of the field  # noqa: E501
+
+        :param bottom_anchor: The bottom_anchor of this FormFieldDefinition.  # noqa: E501
+        :type: str
+        """
+
+        self._bottom_anchor = bottom_anchor
 
     @property
     def anchor_mode(self):
