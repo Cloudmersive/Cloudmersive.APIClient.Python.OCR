@@ -46,7 +46,8 @@ class FormFieldDefinition(object):
         'target_field_height_relative': 'float',
         'target_field_horizontal_adjustment': 'float',
         'target_field_vertical_adjustment': 'float',
-        'ignore': 'list[str]'
+        'ignore': 'list[str]',
+        'options': 'str'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class FormFieldDefinition(object):
         'target_field_height_relative': 'TargetFieldHeight_Relative',
         'target_field_horizontal_adjustment': 'TargetFieldHorizontalAdjustment',
         'target_field_vertical_adjustment': 'TargetFieldVerticalAdjustment',
-        'ignore': 'Ignore'
+        'ignore': 'Ignore',
+        'options': 'Options'
     }
 
-    def __init__(self, field_id=None, left_anchor=None, top_anchor=None, bottom_anchor=None, anchor_mode=None, data_type=None, target_digit_count=None, minimum_character_count=None, allow_numeric_digits=None, vertical_alignment_type=None, horizontal_alignment_type=None, target_field_width_relative=None, target_field_height_relative=None, target_field_horizontal_adjustment=None, target_field_vertical_adjustment=None, ignore=None):  # noqa: E501
+    def __init__(self, field_id=None, left_anchor=None, top_anchor=None, bottom_anchor=None, anchor_mode=None, data_type=None, target_digit_count=None, minimum_character_count=None, allow_numeric_digits=None, vertical_alignment_type=None, horizontal_alignment_type=None, target_field_width_relative=None, target_field_height_relative=None, target_field_horizontal_adjustment=None, target_field_vertical_adjustment=None, ignore=None, options=None):  # noqa: E501
         """FormFieldDefinition - a model defined in Swagger"""  # noqa: E501
 
         self._field_id = None
@@ -87,6 +89,7 @@ class FormFieldDefinition(object):
         self._target_field_horizontal_adjustment = None
         self._target_field_vertical_adjustment = None
         self._ignore = None
+        self._options = None
         self.discriminator = None
 
         if field_id is not None:
@@ -121,6 +124,8 @@ class FormFieldDefinition(object):
             self.target_field_vertical_adjustment = target_field_vertical_adjustment
         if ignore is not None:
             self.ignore = ignore
+        if options is not None:
+            self.options = options
 
     @property
     def field_id(self):
@@ -489,6 +494,29 @@ class FormFieldDefinition(object):
         """
 
         self._ignore = ignore
+
+    @property
+    def options(self):
+        """Gets the options of this FormFieldDefinition.  # noqa: E501
+
+        Optional - additional options that can be set for this field definition, separated by commas.  Possible values are AllowMultiMatch (allow the same anchor to be matched to multiple fields)  # noqa: E501
+
+        :return: The options of this FormFieldDefinition.  # noqa: E501
+        :rtype: str
+        """
+        return self._options
+
+    @options.setter
+    def options(self, options):
+        """Sets the options of this FormFieldDefinition.
+
+        Optional - additional options that can be set for this field definition, separated by commas.  Possible values are AllowMultiMatch (allow the same anchor to be matched to multiple fields)  # noqa: E501
+
+        :param options: The options of this FormFieldDefinition.  # noqa: E501
+        :type: str
+        """
+
+        self._options = options
 
     def to_dict(self):
         """Returns the model properties as a dict"""
