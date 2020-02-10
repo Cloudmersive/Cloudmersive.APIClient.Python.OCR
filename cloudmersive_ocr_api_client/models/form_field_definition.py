@@ -35,6 +35,7 @@ class FormFieldDefinition(object):
         'left_anchor': 'str',
         'top_anchor': 'str',
         'bottom_anchor': 'str',
+        'alternate_anchor': 'str',
         'anchor_mode': 'str',
         'data_type': 'str',
         'target_digit_count': 'int',
@@ -55,6 +56,7 @@ class FormFieldDefinition(object):
         'left_anchor': 'LeftAnchor',
         'top_anchor': 'TopAnchor',
         'bottom_anchor': 'BottomAnchor',
+        'alternate_anchor': 'AlternateAnchor',
         'anchor_mode': 'AnchorMode',
         'data_type': 'DataType',
         'target_digit_count': 'TargetDigitCount',
@@ -70,13 +72,14 @@ class FormFieldDefinition(object):
         'options': 'Options'
     }
 
-    def __init__(self, field_id=None, left_anchor=None, top_anchor=None, bottom_anchor=None, anchor_mode=None, data_type=None, target_digit_count=None, minimum_character_count=None, allow_numeric_digits=None, vertical_alignment_type=None, horizontal_alignment_type=None, target_field_width_relative=None, target_field_height_relative=None, target_field_horizontal_adjustment=None, target_field_vertical_adjustment=None, ignore=None, options=None):  # noqa: E501
+    def __init__(self, field_id=None, left_anchor=None, top_anchor=None, bottom_anchor=None, alternate_anchor=None, anchor_mode=None, data_type=None, target_digit_count=None, minimum_character_count=None, allow_numeric_digits=None, vertical_alignment_type=None, horizontal_alignment_type=None, target_field_width_relative=None, target_field_height_relative=None, target_field_horizontal_adjustment=None, target_field_vertical_adjustment=None, ignore=None, options=None):  # noqa: E501
         """FormFieldDefinition - a model defined in Swagger"""  # noqa: E501
 
         self._field_id = None
         self._left_anchor = None
         self._top_anchor = None
         self._bottom_anchor = None
+        self._alternate_anchor = None
         self._anchor_mode = None
         self._data_type = None
         self._target_digit_count = None
@@ -100,6 +103,8 @@ class FormFieldDefinition(object):
             self.top_anchor = top_anchor
         if bottom_anchor is not None:
             self.bottom_anchor = bottom_anchor
+        if alternate_anchor is not None:
+            self.alternate_anchor = alternate_anchor
         if anchor_mode is not None:
             self.anchor_mode = anchor_mode
         if data_type is not None:
@@ -218,6 +223,29 @@ class FormFieldDefinition(object):
         """
 
         self._bottom_anchor = bottom_anchor
+
+    @property
+    def alternate_anchor(self):
+        """Gets the alternate_anchor of this FormFieldDefinition.  # noqa: E501
+
+        Optional - alterate match text for the specified anchor  # noqa: E501
+
+        :return: The alternate_anchor of this FormFieldDefinition.  # noqa: E501
+        :rtype: str
+        """
+        return self._alternate_anchor
+
+    @alternate_anchor.setter
+    def alternate_anchor(self, alternate_anchor):
+        """Sets the alternate_anchor of this FormFieldDefinition.
+
+        Optional - alterate match text for the specified anchor  # noqa: E501
+
+        :param alternate_anchor: The alternate_anchor of this FormFieldDefinition.  # noqa: E501
+        :type: str
+        """
+
+        self._alternate_anchor = alternate_anchor
 
     @property
     def anchor_mode(self):
