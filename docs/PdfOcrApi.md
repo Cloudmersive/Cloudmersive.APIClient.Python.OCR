@@ -4,10 +4,63 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**pdf_ocr_get_async_job_status**](PdfOcrApi.md#pdf_ocr_get_async_job_status) | **GET** /ocr/pdf/get-job-status | Returns the result of the Async Job - possible states can be STARTED or COMPLETED
 [**pdf_ocr_pdf_to_lines_with_location**](PdfOcrApi.md#pdf_ocr_pdf_to_lines_with_location) | **POST** /ocr/pdf/to/lines-with-location | Convert a PDF into text lines with location
 [**pdf_ocr_pdf_to_words_with_location**](PdfOcrApi.md#pdf_ocr_pdf_to_words_with_location) | **POST** /ocr/pdf/to/words-with-location | Convert a PDF into words with location
 [**pdf_ocr_post**](PdfOcrApi.md#pdf_ocr_post) | **POST** /ocr/pdf/toText | Converts an uploaded PDF file into text via Optical Character Recognition.
 
+
+# **pdf_ocr_get_async_job_status**
+> PdfToTextResponse pdf_ocr_get_async_job_status(async_job_id)
+
+Returns the result of the Async Job - possible states can be STARTED or COMPLETED
+
+### Example
+```python
+from __future__ import print_function
+import time
+import cloudmersive_ocr_api_client
+from cloudmersive_ocr_api_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: Apikey
+configuration = cloudmersive_ocr_api_client.Configuration()
+configuration.api_key['Apikey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Apikey'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = cloudmersive_ocr_api_client.PdfOcrApi(cloudmersive_ocr_api_client.ApiClient(configuration))
+async_job_id = 'async_job_id_example' # str | 
+
+try:
+    # Returns the result of the Async Job - possible states can be STARTED or COMPLETED
+    api_response = api_instance.pdf_ocr_get_async_job_status(async_job_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PdfOcrApi->pdf_ocr_get_async_job_status: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **async_job_id** | **str**|  | 
+
+### Return type
+
+[**PdfToTextResponse**](PdfToTextResponse.md)
+
+### Authorization
+
+[Apikey](../README.md#Apikey)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **pdf_ocr_pdf_to_lines_with_location**
 > PdfToLinesWithLocationResult pdf_ocr_pdf_to_lines_with_location(image_file, language=language, preprocessing=preprocessing)

@@ -36,7 +36,7 @@ class ImageOcrApi(object):
     def image_ocr_image_lines_with_location(self, image_file, **kwargs):  # noqa: E501
         """Convert a scanned image into words with location  # noqa: E501
 
-        Converts an uploaded image in common formats such as JPEG, PNG into lines/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  # noqa: E501
+        Converts an uploaded image in common formats such as JPEG, PNG into lines/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_image_lines_with_location(image_file, async_req=True)
@@ -60,7 +60,7 @@ class ImageOcrApi(object):
     def image_ocr_image_lines_with_location_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Convert a scanned image into words with location  # noqa: E501
 
-        Converts an uploaded image in common formats such as JPEG, PNG into lines/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  # noqa: E501
+        Converts an uploaded image in common formats such as JPEG, PNG into lines/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_image_lines_with_location_with_http_info(image_file, async_req=True)
@@ -143,7 +143,7 @@ class ImageOcrApi(object):
     def image_ocr_image_words_with_location(self, image_file, **kwargs):  # noqa: E501
         """Convert a scanned image into words with location  # noqa: E501
 
-        Converts an uploaded image in common formats such as JPEG, PNG into words/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  # noqa: E501
+        Converts an uploaded image in common formats such as JPEG, PNG into words/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_image_words_with_location(image_file, async_req=True)
@@ -167,7 +167,7 @@ class ImageOcrApi(object):
     def image_ocr_image_words_with_location_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Convert a scanned image into words with location  # noqa: E501
 
-        Converts an uploaded image in common formats such as JPEG, PNG into words/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  # noqa: E501
+        Converts an uploaded image in common formats such as JPEG, PNG into words/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_image_words_with_location_with_http_info(image_file, async_req=True)
@@ -250,7 +250,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_recognize_business_card(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a business card, extract key business information  # noqa: E501
 
-        Analyzes a photograph of a business card as input, and outputs key business information such as the name of the person, name of the business, the address of the business, the phone number, the email address and more.  # noqa: E501
+        Analyzes a photograph of a business card as input, and outputs key business information such as the name of the person, name of the business, the address of the business, the phone number, the email address and more.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_recognize_business_card(image_file, async_req=True)
@@ -272,7 +272,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_recognize_business_card_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a business card, extract key business information  # noqa: E501
 
-        Analyzes a photograph of a business card as input, and outputs key business information such as the name of the person, name of the business, the address of the business, the phone number, the email address and more.  # noqa: E501
+        Analyzes a photograph of a business card as input, and outputs key business information such as the name of the person, name of the business, the address of the business, the phone number, the email address and more.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_recognize_business_card_with_http_info(image_file, async_req=True)
@@ -349,7 +349,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_recognize_form(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a form, extract key fields and business information  # noqa: E501
 
-        Analyzes a photograph of a form as input, and outputs key business fields and information.  Customzie data to be extracted by defining fields for the form.  # noqa: E501
+        Analyzes a photograph of a form as input, and outputs key business fields and information.  Customzie data to be extracted by defining fields for the form.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_recognize_form(image_file, async_req=True)
@@ -376,7 +376,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_recognize_form_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a form, extract key fields and business information  # noqa: E501
 
-        Analyzes a photograph of a form as input, and outputs key business fields and information.  Customzie data to be extracted by defining fields for the form.  # noqa: E501
+        Analyzes a photograph of a form as input, and outputs key business fields and information.  Customzie data to be extracted by defining fields for the form.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_recognize_form_with_http_info(image_file, async_req=True)
@@ -468,7 +468,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_recognize_form_advanced(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a form, extract key fields using stored templates  # noqa: E501
 
-        Analyzes a photograph of a form as input, and outputs key business fields and information.  Customzie data to be extracted by defining fields for the form.  Uses template definitions stored in Cloudmersive Configuration; to configure stored templates in a configuration bucket, log into Cloudmersive Management Portal and navigate to Settings &gt; API Configuration &gt; Create Bucket  # noqa: E501
+        Analyzes a photograph of a form as input, and outputs key business fields and information.  Customzie data to be extracted by defining fields for the form.  Uses template definitions stored in Cloudmersive Configuration; to configure stored templates in a configuration bucket, log into Cloudmersive Management Portal and navigate to Settings &gt; API Configuration &gt; Create Bucket.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_recognize_form_advanced(image_file, async_req=True)
@@ -495,7 +495,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_recognize_form_advanced_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a form, extract key fields using stored templates  # noqa: E501
 
-        Analyzes a photograph of a form as input, and outputs key business fields and information.  Customzie data to be extracted by defining fields for the form.  Uses template definitions stored in Cloudmersive Configuration; to configure stored templates in a configuration bucket, log into Cloudmersive Management Portal and navigate to Settings &gt; API Configuration &gt; Create Bucket  # noqa: E501
+        Analyzes a photograph of a form as input, and outputs key business fields and information.  Customzie data to be extracted by defining fields for the form.  Uses template definitions stored in Cloudmersive Configuration; to configure stored templates in a configuration bucket, log into Cloudmersive Management Portal and navigate to Settings &gt; API Configuration &gt; Create Bucket.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_recognize_form_advanced_with_http_info(image_file, async_req=True)
@@ -587,7 +587,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_recognize_receipt(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a receipt, extract key business information  # noqa: E501
 
-        Analyzes a photograph of a receipt as input, and outputs key business information such as the name of the business, the address of the business, the phone number of the business, the total of the receipt, the date of the receipt, and more.  # noqa: E501
+        Analyzes a photograph of a receipt as input, and outputs key business information such as the name of the business, the address of the business, the phone number of the business, the total of the receipt, the date of the receipt, and more.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_recognize_receipt(image_file, async_req=True)
@@ -612,7 +612,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_recognize_receipt_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Recognize a photo of a receipt, extract key business information  # noqa: E501
 
-        Analyzes a photograph of a receipt as input, and outputs key business information such as the name of the business, the address of the business, the phone number of the business, the total of the receipt, the date of the receipt, and more.  # noqa: E501
+        Analyzes a photograph of a receipt as input, and outputs key business information such as the name of the business, the address of the business, the phone number of the business, the total of the receipt, the date of the receipt, and more.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_recognize_receipt_with_http_info(image_file, async_req=True)
@@ -698,7 +698,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_to_text(self, image_file, **kwargs):  # noqa: E501
         """Convert a photo of a document into text  # noqa: E501
 
-        Converts an uploaded photo of a document in common formats such as JPEG, PNG into text via Optical Character Recognition.  This API is intended to be run on photos of documents, e.g. taken with a smartphone and supports cases where other content, such as a desk, are in the frame and the camera is crooked.  If you want to OCR a scanned image, use the image/toText API call instead as it is designed for scanned images.  # noqa: E501
+        Converts an uploaded photo of a document in common formats such as JPEG, PNG into text via Optical Character Recognition.  This API is intended to be run on photos of documents, e.g. taken with a smartphone and supports cases where other content, such as a desk, are in the frame and the camera is crooked.  If you want to OCR a scanned image, use the image/toText API call instead as it is designed for scanned images.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_to_text(image_file, async_req=True)
@@ -722,7 +722,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_to_text_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Convert a photo of a document into text  # noqa: E501
 
-        Converts an uploaded photo of a document in common formats such as JPEG, PNG into text via Optical Character Recognition.  This API is intended to be run on photos of documents, e.g. taken with a smartphone and supports cases where other content, such as a desk, are in the frame and the camera is crooked.  If you want to OCR a scanned image, use the image/toText API call instead as it is designed for scanned images.  # noqa: E501
+        Converts an uploaded photo of a document in common formats such as JPEG, PNG into text via Optical Character Recognition.  This API is intended to be run on photos of documents, e.g. taken with a smartphone and supports cases where other content, such as a desk, are in the frame and the camera is crooked.  If you want to OCR a scanned image, use the image/toText API call instead as it is designed for scanned images.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_to_text_with_http_info(image_file, async_req=True)
@@ -805,7 +805,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_words_with_location(self, image_file, **kwargs):  # noqa: E501
         """Convert a photo of a document or receipt into words with location  # noqa: E501
 
-        Converts a photo of a document or receipt in common formats such as JPEG, PNG into words/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on photographs of documents.  If you want to OCR scanned documents (e.g. taken with a scanner), be sure to use the image/toText API instead, as it is designed for that use case.  # noqa: E501
+        Converts a photo of a document or receipt in common formats such as JPEG, PNG into words/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on photographs of documents.  If you want to OCR scanned documents (e.g. taken with a scanner), be sure to use the image/toText API instead, as it is designed for that use case.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_words_with_location(image_file, async_req=True)
@@ -831,7 +831,7 @@ class ImageOcrApi(object):
     def image_ocr_photo_words_with_location_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Convert a photo of a document or receipt into words with location  # noqa: E501
 
-        Converts a photo of a document or receipt in common formats such as JPEG, PNG into words/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on photographs of documents.  If you want to OCR scanned documents (e.g. taken with a scanner), be sure to use the image/toText API instead, as it is designed for that use case.  # noqa: E501
+        Converts a photo of a document or receipt in common formats such as JPEG, PNG into words/text with location information and other metdata via Optical Character Recognition.  This API is intended to be run on photographs of documents.  If you want to OCR scanned documents (e.g. taken with a scanner), be sure to use the image/toText API instead, as it is designed for that use case.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_photo_words_with_location_with_http_info(image_file, async_req=True)
@@ -920,7 +920,7 @@ class ImageOcrApi(object):
     def image_ocr_post(self, image_file, **kwargs):  # noqa: E501
         """Convert a scanned image into text  # noqa: E501
 
-        Converts an uploaded image in common formats such as JPEG, PNG into text via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  # noqa: E501
+        Converts an uploaded image in common formats such as JPEG, PNG into text via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_post(image_file, async_req=True)
@@ -945,7 +945,7 @@ class ImageOcrApi(object):
     def image_ocr_post_with_http_info(self, image_file, **kwargs):  # noqa: E501
         """Convert a scanned image into text  # noqa: E501
 
-        Converts an uploaded image in common formats such as JPEG, PNG into text via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  # noqa: E501
+        Converts an uploaded image in common formats such as JPEG, PNG into text via Optical Character Recognition.  This API is intended to be run on scanned documents.  If you want to OCR photos (e.g. taken with a smart phone camera), be sure to use the photo/toText API instead, as it is designed to unskew the image first.  Note: for free tier API keys, it is required to add a credit card to your account for security reasons, to use the free tier key with this API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.image_ocr_post_with_http_info(image_file, async_req=True)

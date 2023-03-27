@@ -1,6 +1,6 @@
 ﻿{
 "projectName" : "cloudmersive_ocr_api_client",
   "packageName" : "cloudmersive_ocr_api_client",
-  "packageVersion": "3.0.1",
+  "packageVersion": "4.0.1",
   "packageUrl": "https://www.cloudmersive.com/ocr-api"
 }  

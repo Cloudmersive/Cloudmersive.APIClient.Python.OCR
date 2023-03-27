@@ -32,25 +32,35 @@ class PdfToTextResponse(object):
     """
     swagger_types = {
         'successful': 'bool',
-        'ocr_pages': 'list[OcrPageResult]'
+        'ocr_pages': 'list[OcrPageResult]',
+        'async_job_id': 'str',
+        'async_job_status': 'str'
     }
 
     attribute_map = {
         'successful': 'Successful',
-        'ocr_pages': 'OcrPages'
+        'ocr_pages': 'OcrPages',
+        'async_job_id': 'AsyncJobID',
+        'async_job_status': 'AsyncJobStatus'
     }
 
-    def __init__(self, successful=None, ocr_pages=None):  # noqa: E501
+    def __init__(self, successful=None, ocr_pages=None, async_job_id=None, async_job_status=None):  # noqa: E501
         """PdfToTextResponse - a model defined in Swagger"""  # noqa: E501
 
         self._successful = None
         self._ocr_pages = None
+        self._async_job_id = None
+        self._async_job_status = None
         self.discriminator = None
 
         if successful is not None:
             self.successful = successful
         if ocr_pages is not None:
             self.ocr_pages = ocr_pages
+        if async_job_id is not None:
+            self.async_job_id = async_job_id
+        if async_job_status is not None:
+            self.async_job_status = async_job_status
 
     @property
     def successful(self):
@@ -97,6 +107,52 @@ class PdfToTextResponse(object):
         """
 
         self._ocr_pages = ocr_pages
+
+    @property
+    def async_job_id(self):
+        """Gets the async_job_id of this PdfToTextResponse.  # noqa: E501
+
+        When the job exceeds 25 pages, an Async Job ID is returned.  Use the CheckPdfOcrJobStatus API to check on the status of this job using the AsyncJobID and get the result when it finishes  # noqa: E501
+
+        :return: The async_job_id of this PdfToTextResponse.  # noqa: E501
+        :rtype: str
+        """
+        return self._async_job_id
+
+    @async_job_id.setter
+    def async_job_id(self, async_job_id):
+        """Sets the async_job_id of this PdfToTextResponse.
+
+        When the job exceeds 25 pages, an Async Job ID is returned.  Use the CheckPdfOcrJobStatus API to check on the status of this job using the AsyncJobID and get the result when it finishes  # noqa: E501
+
+        :param async_job_id: The async_job_id of this PdfToTextResponse.  # noqa: E501
+        :type: str
+        """
+
+        self._async_job_id = async_job_id
+
+    @property
+    def async_job_status(self):
+        """Gets the async_job_status of this PdfToTextResponse.  # noqa: E501
+
+        Returns the job status of the Async Job, if applicable.  Possible states are STARTED and COMPLETED  # noqa: E501
+
+        :return: The async_job_status of this PdfToTextResponse.  # noqa: E501
+        :rtype: str
+        """
+        return self._async_job_status
+
+    @async_job_status.setter
+    def async_job_status(self, async_job_status):
+        """Sets the async_job_status of this PdfToTextResponse.
+
+        Returns the job status of the Async Job, if applicable.  Possible states are STARTED and COMPLETED  # noqa: E501
+
+        :param async_job_status: The async_job_status of this PdfToTextResponse.  # noqa: E501
+        :type: str
+        """
+
+        self._async_job_status = async_job_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""
